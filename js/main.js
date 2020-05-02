@@ -61,7 +61,7 @@
 	}
 
 	video.setAttribute('src',url[0]);
-	lis[0].innerHTML = 'palying '+lis[0].innerHTML;
+	lis[0].innerHTML = lis[j].innerHTML+'正在播放';
 	lis[0].className = "select";
 	
 	
