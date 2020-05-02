@@ -1,4 +1,4 @@
-﻿window.onload = function(){
+window.onload = function(){
 	
 	var video = document.getElementById("video");
 	var lis = document.getElementsByTagName("li");
@@ -23,7 +23,7 @@
 					if(lis[j] == this){
 						video.setAttribute("src",this.getAttribute("value"));
 						video.setAttribute('autoplay','autoplay');
-						this.innerHTML = '正在播放 '+this.innerHTML;
+						this.innerHTML = 'palying '+this.innerHTML;
 						this.className = "select";
 						curr = j+1;
 					}else{
@@ -77,7 +77,7 @@
 			if(j == curr){
 				video.setAttribute("src",lis[j].getAttribute("value"));
 				video.setAttribute('autoplay','autoplay');
-				lis[j].innerHTML = '正在播放 '+lis[j].innerHTML;
+				lis[j].innerHTML = 'palying '+lis[j].innerHTML;
 				lis[j].className = "select";
 			}else{
 				lis[j].innerHTML = lis[j].getAttribute("title");
