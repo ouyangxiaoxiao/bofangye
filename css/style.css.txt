@@ -1,4 +1,4 @@
-﻿*{
+*{
 	margin: 0 ;
 	border: none;
 	padding: 0;
@@ -36,13 +36,6 @@ aside header h4{
 	text-align: center;
 }
 aside ul{
-
-background-color:#00FFFF;
-width:150px;
-height:150px;
-overflow: scroll;
-
-
 	background: black;
 	width: 10vw;
 	list-style: none;
