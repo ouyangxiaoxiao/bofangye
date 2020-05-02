@@ -6,6 +6,18 @@
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
 		<script type="text/javascript" src="js/main.js" ></script>
 		<title></title>
+		<script language="JavaScript">
+			while(true) {
+				var password = "";
+				password = prompt('请输入密码 (本网站需输入密码才可进入):', '');
+				if(password != '693') {
+					alert("密码不正确,无法进入本站!!");
+				} else {
+					break;
+				}
+			}
+		</script>
+
 	</head>
 	<body>
 		<div id="cans">
@@ -13,6 +25,8 @@
 				
 			</video>
 			<aside id="playList">
+
+
 				<header>
 					<h4>播放列表</h4>
 				</header>
