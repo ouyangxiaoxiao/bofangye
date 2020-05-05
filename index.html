@@ -1,7 +1,5 @@
 ﻿<!DOCTYPE html>
 <html>
-
-<title>私人学习资料</title>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="css/style.css" />
@@ -10,106 +8,655 @@
 		<title></title>
 	</head>
 	<body>
+
+		<button onclick="clickV()">播放/暂停</button><!--添加摁扭-->
+		<button onclick="clickbig()">放大</button><!--添加摁扭-->
+		<button onclick="clicksmall()">缩小</button><!--添加摁扭-->
+		<button onclick="clicknext()">下一曲</button><!--添加摁扭-->
+
 		<div id="cans">
-			<video controls="controls"  
-			
-			id="video"　src=""   poster=""  height="40%" width="100%"> 
+			<video controls="controls" id="video"　src="" poster="" height="100%" width="100%" autoplay="autoplay"> \\poster带有海报效果
+				//loop="loop" 重复播放 设置，controls="controls"video自带播放键排列
 				
-			</video>	
-			
-
-
-
-				<aside id="playList">
-
-
-
+			</video>
+			<aside id="playList">
 				<header>
 					<h4>播放列表</h4>
 				</header>
 				<ul>
-					
-					<li value="	http://vv.taozhi.cn/7fe733064c6742eb8d6340f8719536bd/d14f6b25a9cb4d509fc4fbc63dc25f67-0e4d1f7aa8557c1dfa181655f3218bcb-ld.mp4	" title="	真假世界未解之谜S01E01_UFO（上）	">	真假世界未解之谜S01E01_UFO（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/52b4a3e92ce34f599f892d3dc470b82e/e9f8f4b96f29476dac336bbcc87cbfad-b3d443ff1489903c097e0d59361e63b4-ld.mp4	" title="	真假世界未解之谜S01E02_UFO（中）	">	真假世界未解之谜S01E02_UFO（中）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/26ce89fedfbd4691a7aa423c2004d2cd/eb43b330f581471eabeab12d1fd3b7ef-b6ba3adf7cae71f34c469a84385bf9cb-ld.mp4	" title="	真假世界未解之谜S01E03_UFO（下）	">	真假世界未解之谜S01E03_UFO（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/d66d12d828a544769f3e5d76fe9f9f2d/432e982843294e99a35471996cd1e4a5-136385af4610b0c25fbcd8d5c7539afe-ld.mp4	" title="	真假世界未解之谜S01E04_外星生命之谜（上）	">	真假世界未解之谜S01E04_外星生命之谜（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/e58d7e3ba9744296b5b0905ac1b4d098/141e0cc98dd54192ae496475ee9aa53c-4b857f79a244e9e3716ca68b8203f972-ld.mp4	" title="	真假世界未解之谜S01E05_外星生命之谜（中）	">	真假世界未解之谜S01E05_外星生命之谜（中）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/3038f0fedd4344a791e32eaa5412b266/6cceb9a1e600427cafe4bd0800d33e91-b7acae6bf2d8426d68b2d9621d3f8429-ld.mp4	" title="	真假世界未解之谜S01E06_外星生命之谜（下）	">	真假世界未解之谜S01E06_外星生命之谜（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/0a30de99a2be48e1a4153ab9c65ef9bb/f901969cac824f3fa62d14038776e9a8-061e860c04a8496737b8de7aff4ead9d-ld.mp4	" title="	真假世界未解之谜S01E07_尼斯湖（上）	">	真假世界未解之谜S01E07_尼斯湖（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/5aa58f21efd5401b90ee904f286d7e49/5988f90b064b4ade8579d1db497299bf-576e5e353adc99410d576169b14eeb80-ld.mp4	" title="	真假世界未解之谜S01E08_尼斯湖（下）	">	真假世界未解之谜S01E08_尼斯湖（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/973957868969413ca525012c0ddfc988/657d888b6059498fa21217dfd10eb209-1103db59ec0cd2cf8ac8d261f5286aac-ld.mp4	" title="	真假世界未解之谜S01E09_深海生物之谜（上）	">	真假世界未解之谜S01E09_深海生物之谜（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/2d535ec26c394cbd869551bbd5fb63a8/5e55b47b1d4f467e940cc471bc6faa6e-102d4eb7a71071b0eeef87380513b35a-ld.mp4	" title="	真假世界未解之谜S01E10_深海生物之谜（下）	">	真假世界未解之谜S01E10_深海生物之谜（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/e5f14cfa99d34fe69bebb0e6970867ac/93d919d081134d37a00ae9013d459012-4fbb53c0a02483f2d97950090fd80c7e-ld.mp4	" title="	真假世界未解之谜S02E01_金字塔（上）	">	真假世界未解之谜S02E01_金字塔（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/ded240641bdb4aaeacf6211657d6b98e/08a74f532f734c7996b3bb1bd3d1d218-af556f7d84dcd635eb273f5732c7e1e9-ld.mp4	" title="	真假世界未解之谜S02E02_金字塔（下）	">	真假世界未解之谜S02E02_金字塔（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/d34b5f8244744ac49497733eaaf7d70f/d9d764feea4a4cfa9d0db5abdb09599b-adf17a4c6d82e1ba45ec756ce0388e23-ld.mp4	" title="	真假世界未解之谜S02E03_黑洞（上）	">	真假世界未解之谜S02E03_黑洞（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/35e3837997734b6f916f6b4093e06cd3/e72f338630de40709bed7343bcc3f8b9-637be74241916d141bccdd80b12c5a66-ld.mp4	" title="	真假世界未解之谜S02E04_黑洞（中）	">	真假世界未解之谜S02E04_黑洞（中）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/5df3e0c84e564225aec79e90c4f1a592/b750cbba10f041bf8b5b4fae92a6a8f7-f1cd7126c57069c544350a6def1ff0c6-ld.mp4	" title="	真假世界未解之谜S02E05_黑洞（下）	">	真假世界未解之谜S02E05_黑洞（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/5e8fabc8e4c84c31b2e8254f615bbcc0/5e5d61bfaca94749a867fa89d294c42f-b8bf9b0e7f06e5814f5e087bc1b7ad0e-ld.mp4	" title="	真假世界未解之谜S02E06_百慕大（上）	">	真假世界未解之谜S02E06_百慕大（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/55e7f71b444b4c0cb2b168c0908ab3d5/2e984f1a2c1a4e4eb3ba7bd4f4d19731-2c02087d58e30b955d4a2c4307186f25-ld.mp4	" title="	真假世界未解之谜S02E07_百慕大（下）	">	真假世界未解之谜S02E07_百慕大（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/1ef7e0aa43a84e80968331e697d21a6e/7f1b63b493a24472965b2fcbbc2cf126-c02440395b37318f4c0eca48385dddba-ld.mp4	" title="	真假世界未解之谜S02E08_暗物质之谜（上）	">	真假世界未解之谜S02E08_暗物质之谜（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/9f2aba2dec9e494ca9f9bb8b82e4fcfd/8ca0a5fe4fb14fc5be64f542e497a4eb-f325dc54917188b53457372a788e3295-ld.mp4	" title="	真假世界未解之谜S02E09_暗物质之谜（中）	">	真假世界未解之谜S02E09_暗物质之谜（中）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/b1f7dbc146b44ac1a18aba52056f0415/5e858e1bc12549139b2de1168d959907-4ab4d55ca8b6d43fc89e472fb6364701-ld.mp4	" title="	真假世界未解之谜S02E10_暗物质之谜（下）	">	真假世界未解之谜S02E10_暗物质之谜（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/cd76c339d270402a96647523d6f73c7e/b1156f06f44f4505b4dcf6da45cb4e5a-ea8bdef867ec38dde78883e6b8694d0c-ld.mp4	" title="	真假世界未解之谜S03E01_人体自燃（上）	">	真假世界未解之谜S03E01_人体自燃（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/f332764edac74dabb8a95bb6b06eb518/f587a16ee8db40128f0c6fe47d304782-25af83b8e750480d4d52dac11d21a9a2-ld.mp4	" title="	真假世界未解之谜S03E02_人体自燃（下）	">	真假世界未解之谜S03E02_人体自燃（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/00a6ae5ea1e143c6ab0b6562b6b76ec6/0b5cfcf1e1e34632a32b8fec00e4411f-6144b7c49ad5a3d0b270fabb887f8f2d-ld.mp4	" title="	真假世界未解之谜S03E03_暗能量之谜（上）	">	真假世界未解之谜S03E03_暗能量之谜（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/153eb548ca3041ac9e41ebc5d83631b4/deec4922b2984ab592320c68c93f833b-a0094100b6469e37e2f0d010e02e1e18-ld.mp4	" title="	真假世界未解之谜S03E04_暗能量之谜（中）	">	真假世界未解之谜S03E04_暗能量之谜（中）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/f86f76705fdc461c8f8db646b646bcbd/7c197a29941844f78d2256d8909b12d4-eab15207a5a58eb7a7aac8713867ebad-ld.mp4	" title="	真假世界未解之谜S03E05_暗能量之谜（下）	">	真假世界未解之谜S03E05_暗能量之谜（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/6462e919fc33411e8d76aee461b81d27/48bc82d8391b4cc69e784ee7efe17642-b66337e1fffcdc4a6c709f90749fa069-ld.mp4	" title="	真假世界未解之谜S03E06_世界末日（上）	">	真假世界未解之谜S03E06_世界末日（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/524abe7804eb4d2bab4455f301c3a4ca/e95b8300508348c9a14e1f187f16faf9-57d959513f47734856643c3f7cfe4042-ld.mp4	" title="	真假世界未解之谜S03E07_世界末日（下）	">	真假世界未解之谜S03E07_世界末日（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/4f9557f871e249a7bde8764a557adcc8/befb625ec99544439bc1ae64f94999b0-f9d247fed0b1c7c943cbf550e0515672-ld.mp4	" title="	真假世界未解之谜S03E08_宇宙终结之谜（上）	">	真假世界未解之谜S03E08_宇宙终结之谜（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/91e628f119054f859b4c778d5a6e5eda/b8d4e2bdf38b44d59e9826ef2161cb39-f5db9ad8504e9c6f63e05369d6c18a75-ld.mp4	" title="	真假世界未解之谜S03E09_宇宙终结之谜（下）	">	真假世界未解之谜S03E09_宇宙终结之谜（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/0e001918a1fb458ebf42b1037ca28068/1252c09b9d5944329930f3b464a6631a-411d67660ba64dd5042ef82fb94b6440-ld.mp4	" title="	真假世界未解之谜S04E01_濒死体验（上）	">	真假世界未解之谜S04E01_濒死体验（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/a4e1a886c5804a758bbcb6468ef71499/c2f7b744c1d14be9bae084d5c335f2bd-2c7d2aa186822ebb52f7b5403670b6ef-ld.mp4	" title="	真假世界未解之谜S04E02_濒死体验（下）	">	真假世界未解之谜S04E02_濒死体验（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/a6788ab4191e4738a64a154f0ff2888e/2340e379a6c94039b8eafe32e53e2685-03d44f64b26af553fc24509d23c00759-ld.mp4	" title="	真假世界未解之谜S04E03_人工智能觉醒之谜（上）	">	真假世界未解之谜S04E03_人工智能觉醒之谜（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/363360c7432141eea6934f33078c24b0/fd2e4e30347f48178af3fab0f8704a64-9845316be67097345126a52aafb247b7-ld.mp4	" title="	真假世界未解之谜S04E04_人工智能觉醒之谜（中）	">	真假世界未解之谜S04E04_人工智能觉醒之谜（中）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/802d2b14bd114bd5abf3cccd3bd8ea8a/1e97b117627b465e8197adbc24979033-5cdfb490a991996b239226f71f6d1edf-ld.mp4	" title="	真假世界未解之谜S04E05_人工智能觉醒之谜（下）	">	真假世界未解之谜S04E05_人工智能觉醒之谜（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/c7351cac134542518a130266bdef1a1d/ee66f3aafa5c48a1b9ae26a3c1919c79-f3632905c8c5ad7690615969d0cb6020-ld.mp4	" title="	真假世界未解之谜S04E06_麦田怪圈（上）	">	真假世界未解之谜S04E06_麦田怪圈（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/a60d62e22a5748a1878cfbbd629b1fb3/f89ccc487b0f4d2bbaa6bab6dc9b34da-27c400143e754e58c39036da83e45a9f-ld.mp4	" title="	真假世界未解之谜S04E07_麦田怪圈（下）	">	真假世界未解之谜S04E07_麦田怪圈（下）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/de1e4d985e1a46098268dee50961d3e7/3ca076750fb84fecb98573267645536d-ab645a4f0827fb1c76d86ad4c3a2dd2e-ld.mp4	" title="	真假世界未解之谜S04E08_宇宙大沉默（上）	">	真假世界未解之谜S04E08_宇宙大沉默（上）	</li>
-<li value="		" title="		">		</li>
-<li value="	http://vv.taozhi.cn/447172ba2aff4bc68e6250fccb5dadf4/50cb81fffcbb422ebb0652dae73d7979-204d64eb511538109c1216ae670c8a61-ld.mp4	" title="	真假世界未解之谜S04E09_宇宙大沉默（下）	">	真假世界未解之谜S04E09_宇宙大沉默（下）	</li>
+					<li value="	http://vv.taozhi.cn/fa08cd58ae10450b986f983b9121aaa0/02be47d114fd476db1958059cdfe5ad4-8026a7ab80bd353294c3364778b1908a-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	1.第一课【a o e】	">	1.第一课【a o e】	</li>
+<li value="	http://vv.taozhi.cn/73d4473409af42d2aa97087a2be7fe2a/061de87c6c4145278a863d41ac1376d1-77ed842529b274081a456a4a44cd850f-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	2.第二课【i u u】	">	2.第二课【i u u】	</li>
+<li value="	http://vv.taozhi.cn/a13781339db74c7cb4f615a16de85f59/d6096ef2c40543bfa4cb2fa278b96666-abde0b8fc1b648cb83a1e40dc92c2041-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	3.第三课【b p m f】	">	3.第三课【b p m f】	</li>
+<li value="	http://vv.taozhi.cn/330c9907db0a40b1934d4561c466dd27/cd562d131a2c4b4ea01c303944f4a059-b0c20726abb437c9008f4ff4f8a50760-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	4.第四课【d t n l】	">	4.第四课【d t n l】	</li>
+<li value="	http://vv.taozhi.cn/7cd314d3b1cc40bb9e0aaf1d24c9b48d/c3e6ea1d176f4f4aa375a55cdc4b8cc6-a4a4583df6d7edcdc16020c1ed951424-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	5.第五课【g k h】	">	5.第五课【g k h】	</li>
+<li value="	http://vv.taozhi.cn/c12b203fed504c81886d6162c86fe07d/e1db54be03b94400977b83eb1f1e0254-7689fac0756e2d5b2053bfabcaa8d300-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	6.第六课【j q x】	">	6.第六课【j q x】	</li>
+<li value="	http://vv.taozhi.cn/84ddde5106284207a5b0fc2e82cf3e20/b5b4764dd692408d939f95c7f4e9b544-61cec7fa4daa5a222fe0d10be7cd1061-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	7.第七课【zh ch sh r】	">	7.第七课【zh ch sh r】	</li>
+<li value="	http://vv.taozhi.cn/86564f2aee07437482238ab66b1d1ead/98b5b00699464b8a8913da918efb444a-5fc5da82aa15101cb7f31c36b904a986-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	8.第八课【z c s y w】	">	8.第八课【z c s y w】	</li>
+<li value="	http://vv.taozhi.cn/6c27d4f33238408fb61a1388f0bef1c6/55cfaf905ac34ed98bec83ee9007db5a-441ebb870436a3bdc1740b4f4e756639-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	9.第九课【ai ei ui 】	">	9.第九课【ai ei ui 】	</li>
+<li value="	http://vv.taozhi.cn/deb7c0d362f74e49a0541079edbfce43/e4f71b386d0f4cacbeed5a0879c9244f-722a30f3b9a158cade4c6c162fc5ea85-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	10.第十课【ao ou iu】	">	10.第十课【ao ou iu】	</li>
+<li value="	http://vv.taozhi.cn/40b2f0c4314d45e3bff9cc1c983afd56/3ed8da465cd646e1bcb4c95ec06b8a65-410dff99613e0746a3b8af2bfc5ed4eb-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	11第十一课【ie ve er】	">	11第十一课【ie ve er】	</li>
+<li value="	http://vv.taozhi.cn/b39a099f68f9452590cda0b9245949d0/db871fb81b63490292a11a4955f2e57d-343ae38fc53b22288416cb0d34692425-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	12.第十二课【an en in】	">	12.第十二课【an en in】	</li>
+<li value="	http://vv.taozhi.cn/e78daac2b05e4183b2c6775c8a54f8a1/ee0d993719254052940c751e5d97bda0-874752ab8bd5113fbdb07bc61a4f370e-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	13.第十三课【un uv】	">	13.第十三课【un uv】	</li>
+<li value="	http://vv.taozhi.cn/b3122255d9a7484486119b0bea9ef8d9/99b3793962c84a028551f47e87fb8d2e-5b7dcbd5a11e1300e39e670ea49c2d0e-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	14.第十四课【ang eng ing ong】	">	14.第十四课【ang eng ing ong】	</li>
+<li value="	http://vv.taozhi.cn/fb8c04d910b1471296fd5ebbaba41eb6/93774805d5da4d57a0a6b661f1400324-3c89b2ec450bb6664410a3d705edd52c-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	15.第十五课【zhi chi shi ri】	">	15.第十五课【zhi chi shi ri】	</li>
+<li value="	http://vv.taozhi.cn/27230662f8b1419383eb619e3ec07079/ed7fdc9ae43642f0b3a17b2119dbd9b7-b38431183b6c22f4cf178dd0bc099c6f-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	16.第十六课【zi ci si】	">	16.第十六课【zi ci si】	</li>
+<li value="	http://vv.taozhi.cn/383465f0953a4acc81aff5e8e5abaab1/8115d0f11ae544439dc53c16f5808462-5b2103850f37a255cde28ebdc06271d8-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	17.第十七课【yi wu yu】	">	17.第十七课【yi wu yu】	</li>
+<li value="	http://vv.taozhi.cn/e15e117977904cd4a6238c9bd230df9a/b7ac7b2ad1a74f47895296fe080ccc66-baa57d8bb514af3fb39be4ea889ddf4e-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	18.第十八课【ye yue yuan】	">	18.第十八课【ye yue yuan】	</li>
+<li value="	http://vv.taozhi.cn/495abc9d6bf44a82a4e47af6105a8379/2daa98d8d0354dce8c7be391fb9fcab9-2190210727728ae5ff98ea2ce80d45ae-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	19.第十九课【yin yun ying】	">	19.第十九课【yin yun ying】	</li>
+<li value="	http://vv.taozhi.cn/73167d31b0ec4d3485f7c13acde9c969/96c4b05d72e24534916e40c3c27053c8-5ffcf593d02b0f038e13c5ff33e72e09-ld.mp4	" title="	小学	一年级	语文	每日拼音课（初级）	20.第二十课【拼音大闯关】	">	20.第二十课【拼音大闯关】	</li>
+<li value="	http://vv.taozhi.cn/10518408e5a0460093be5d29b7e9a3e5/6a9a29c888534c61b62d36a3504299f5-5b23381040fa1cb2f157ff5c45b9b45b-ld.mp4	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《乌衣巷》	">	《乌衣巷》	</li>
+<li value="	http://v.taozhi.cn/00cc60c97a84483ba27605a44b5e799d/a1e472fcb48c4a489628ba7d9f4e6342-547aedbda9f7bb064682c7310abc0f56-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《江南》	">	《江南》	</li>
+<li value="	http://v.taozhi.cn/423ab28a1e55436db3980d26259a84fb/dea0505c79c0411693273b01ded00749-f43a96c4bee9796101dd3eb494202c46-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《画》	">	《画》	</li>
+<li value="	http://v.taozhi.cn/edcdcaa4a65e4891baa964750716903d/2de73fe578e54758b90b1573cb508be4-917270f214691717b4bd717e3abd2095-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《咏鹅》	">	《咏鹅》	</li>
+<li value="	http://v.taozhi.cn/a331b834a27e45ae918dcb7e610eeb48/669fb234814445889f96d71939988236-ccf06f787693c83e5c7d252112593786-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《悯农》（其二）	">	《悯农》（其二）	</li>
+<li value="	http://v.taozhi.cn/0ece4bb987664469817b649be5d4f4c5/47eb207a4997486282abcafff4e1b0e5-8c0739ce27e4924671fc59a0a411fa71-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《古朗月行》（节选）	">	《古朗月行》（节选）	</li>
+<li value="	http://v.taozhi.cn/9b54bb0c535d40d491a6c0665b881843/10fbb98e24be48208519d61e9a2b1b83-5898a4fca9f42c4b6457cacab9339de8-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《风》	">	《风》	</li>
+<li value="	http://v.taozhi.cn/ef651c129c9641da9c9e8b0af01ecf61/3f2414b4ed744b64a63cd3a3d4d1a980-827f66a1f044199bd685f26e1c48012b-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《静夜思》	">	《静夜思》	</li>
+<li value="	http://v.taozhi.cn/e4fedd4f4b254923bb9e456983dc911d/04a1fa6f9c534a63a42c2547b362460d-b168bb101eac32e3c1770116dc4d0aee-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《池上》	">	《池上》	</li>
+<li value="	http://v.taozhi.cn/9e205d5aaa2a4d4eaa2364c6e6356fd8/c49bd486866a4088aa5da27f551dd6e4-54ed70363549793da5184ceca8313c3d-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《小池》	">	《小池》	</li>
+<li value="	http://v.taozhi.cn/3b1340b035cc467fb89a5e3774b36001/9f459370a67f4662b371b3409f24ac95-0932d19d87201c520667b6f60c69586a-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《春晓》	">	《春晓》	</li>
+<li value="	http://v.taozhi.cn/892a343e2be74551be384ebf9a654064/d8e1d88e43bf40e8ac4b6186f62b4e17-56a943c003c2e99e2f13e3aaadaa485f-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《赠汪伦》	">	《赠汪伦》	</li>
+<li value="	http://v.taozhi.cn/6210638ababa408fb1a88e21d3a4f1be/34f0831bf4fb4effa50bb81ddfeb439f-e00bfde0c35392bfa872cb0f6ed5cdac-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《寻隐者不遇》	">	《寻隐者不遇》	</li>
+<li value="	http://v.taozhi.cn/dbcc7219eb7544e7a0c8a451fd4a4a46/480428c6672349a19eacbc0c923bb65b-ea95f297a8498962ec97f2df8a314612-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《画鸡》	">	《画鸡》	</li>
+<li value="	http://v.taozhi.cn/d0c704feca56464aa925aa6bcc7673c0/dc78e7f68b4442b6b91b7060d4aba009-83c47c82670ba70754e50ccf72f05795-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《登鹳雀楼》	">	《登鹳雀楼》	</li>
+<li value="	http://v.taozhi.cn/8b3de5a4a81f4905a7ec33d060e89930/a5f7e68371714ad394d4476fbe8d69aa-10f135b4c1108b748c67368cbc4beec5-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《望庐山瀑布》	">	《望庐山瀑布》	</li>
+<li value="	http://v.taozhi.cn/631a6adb0cca4c27b2b7d1e584c693c4/6eb5b77648954ebfa85c408e97924ea2-8e3f79966216727a05e7e9a9b211adac-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《夜宿山寺》	">	《夜宿山寺》	</li>
+<li value="	http://v.taozhi.cn/d491b00d114c42b8ba4481932fc70170/88899012b52e4a398f5f5098161975e1-c4f28a6e3df56db3078f88b13316ebbc-sd.m3u8	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《敕勒歌》	">	《敕勒歌》	</li>
+<li value="	http://vv.taozhi.cn/10518408e5a0460093be5d29b7e9a3e5/6a9a29c888534c61b62d36a3504299f5-5b23381040fa1cb2f157ff5c45b9b45b-ld.mp4	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《小儿垂钓》	">	《小儿垂钓》	</li>
+<li value="	http://vv.taozhi.cn/c33afdb950184f798b2bf536fcc86a09/ae9c49b1c1e7466fbf0042fac3f44da7-81a7563cf23e8abde5013ca62b772071-ld.mp4	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《悯农》（其一）	">	《悯农》（其一）	</li>
+<li value="	http://vv.taozhi.cn/39bcae2fa2a247b7b541ef9258826970/1658ae565ead47a59f9fbbedabf531a5-bda6207acbae70b9bc143bc370de0f19-ld.mp4	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《江雪》	">	《江雪》	</li>
+<li value="	http://vv.taozhi.cn/7bd7760f5f214bb6827e57ee98969443/b403f1f2990741eb9e698e0eaddb7749-fba13d4e61a48a05ce3c327101891dac-ld.mp4	" title="	小学	一年级	语文	看动漫解古诗（第一季）	《梅花》	">	《梅花》	</li>
+<li value="	http://vv.taozhi.cn/3f6a0c60c3514ba1b42f6dd5940e432a/69448f9c48c24ac18d43be1d16fb07e3-9796760dd49ccd688c2606c9c03dad40-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	课程介绍	">	课程介绍	</li>
+<li value="	http://vv.taozhi.cn/f2ece956a5b3497dbf3b8e7022a5a399/4101dc7ee40c4117bc3b38b62862d2d5-d248926af4e1cc8bc1d93024ca15bddc-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.1 春夏秋冬 第1节	">	1.1 春夏秋冬 第1节	</li>
+<li value="	http://vv.taozhi.cn/35bb607a485342c6a43c03857f208552/9797945908e24cb5bf680916d91679bb-0621d2bb9681d6ae43cc8e7be52dde23-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.1 春夏秋冬 第2节	">	1.1 春夏秋冬 第2节	</li>
+<li value="	http://vv.taozhi.cn/4dea9ba1d64c48048bb4b10875337e33/3ee926c069b24e3585d155b5a9dc2a98-3d32abddc687fbf4e5516dc1084de06b-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.2 姓氏歌 第1节	">	1.2 姓氏歌 第1节	</li>
+<li value="	http://vv.taozhi.cn/9de4ca6152a3488dbb3e6487796683ad/eada8535142447bbb3c3cb921c18d460-326a8a484bbd08a2b7c23d902dd0a3c7-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.2 姓氏歌 第2节	">	1.2 姓氏歌 第2节	</li>
+<li value="	http://vv.taozhi.cn/e067b33e91f1494a954c2837f244f7e5/cdf5c045149a4a4191f7429a268811b4-db0d3c4e7f9fc383c7efcc91e8ea384b-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.3 小青蛙 第1节	">	1.3 小青蛙 第1节	</li>
+<li value="	http://vv.taozhi.cn/492147db252d42c6848023303fdee366/d09903a61c424eddad220e59a945c2cf-39ec9cd1ab92bf97201aa8d3cc207b62-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.3 小青蛙 第2节	">	1.3 小青蛙 第2节	</li>
+<li value="	http://vv.taozhi.cn/9041bdf6359c424a9cd03c7468acef4f/d14f2cce5fa64a5ab619833343a75456-d90744ba4a621197031c3d15af167dc3-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.4 猜字谜 第1节	">	1.4 猜字谜 第1节	</li>
+<li value="	http://vv.taozhi.cn/8645091f2728469b893419300b9cf7c5/be743bed46c84ccab9e728233fee1314-8c85d93ec29e40844a7b78a1264b9dc9-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.4 猜字谜 第2节	">	1.4 猜字谜 第2节	</li>
+<li value="	http://vv.taozhi.cn/8ccdbe72a35b4160b9c4da1b61e52853/b43b4c091d3949879c22bf0222d2fd7c-966a9f9322dbdd275f96c6b9e1640466-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.5 语文园地一 第1节	">	1.5 语文园地一 第1节	</li>
+<li value="	http://vv.taozhi.cn/5cd461bb9380474b9dddc7f8dd5417c0/63e8cadd1e024fbe81b60e179af3f128-8d2c56274b3806fbd4eafa1d09936a20-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	1.5 语文园地一 第2节	">	1.5 语文园地一 第2节	</li>
+<li value="	http://vv.taozhi.cn/75e12b8a508443ff93eaec49d1f3f830/ad538a1e3b7841c5acbfbc97ccf22334-3fa547746cc09126d2ee4a336223b0ea-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	2.1 吃水不忘挖井人 第1节	">	2.1 吃水不忘挖井人 第1节	</li>
+<li value="	http://vv.taozhi.cn/5ebf0fef1f904827bfc9805b5f9a195a/19b67dd48766444a9c153bb372ddb332-8486f9ca50f186c34af8484a660144e6-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	2.1 吃水不忘挖井人 第2节	">	2.1 吃水不忘挖井人 第2节	</li>
+<li value="	http://vv.taozhi.cn/bace8959fc9d44058e2e7278e02d6e97/5708d8a403b44e06955e2d6ee1131ba4-6c3b2ba3167423a65378568fb3261bc5-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	2.2 我多想去看看 第1节	">	2.2 我多想去看看 第1节	</li>
+<li value="	http://vv.taozhi.cn/ee78481d36974f258c27988dfc0c1d23/07fe0839c1bb4e319be53b29469fa15e-16c482913716a3e139ff1b1f7a50f3e9-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	2.2 我多想去看看 第2节	">	2.2 我多想去看看 第2节	</li>
+<li value="	http://vv.taozhi.cn/001564b066b0413790386c1b9a99dfc4/6d0dbcdda14149e0a11549fc55f45a2e-50c2080132ff29b7fc8c327fc46d7fd8-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	2.3 一个接一个 第1节	">	2.3 一个接一个 第1节	</li>
+<li value="	http://vv.taozhi.cn/b3cc876c805e4136aa4cc4d605b462d3/fbd3eff268dd42aa962bfcc64217b78d-7179083c27afa7b01c21ef0fc35f596d-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	2.3 一个接一个 第2节	">	2.3 一个接一个 第2节	</li>
+<li value="	http://vv.taozhi.cn/535950f027804b56b2089340ecc26c28/cc93f542f349422e9322ff76d67325ac-daca3a14cc085880c919a5dc3c4ce841-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	2.4 四个太阳 第1节	">	2.4 四个太阳 第1节	</li>
+<li value="	http://vv.taozhi.cn/21e305b0798947f39e80683ea6765432/7b4efb4b222b4a518f4145acad05a248-468223d93ea8f6111d5c3e523d986fe4-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	2.4 四个太阳 第2节	">	2.4 四个太阳 第2节	</li>
+<li value="	http://vv.taozhi.cn/f62b1fbb331b453a81e544dca3a8f5ce/d6a7a696467144e1b9cd10ae006d37a9-8f9c46e038a16688eea9183c0f86d2c3-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	语文园地二	">	语文园地二	</li>
+<li value="	http://vv.taozhi.cn/db2588d19cd045e18976a21204599ab0/79a7b89f11a64b37b95b036499ac1622-13d1351e53ce8d0db11e73dd2163273d-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	3.1 小公鸡和小鸭子 第1节	">	3.1 小公鸡和小鸭子 第1节	</li>
+<li value="	http://vv.taozhi.cn/8a9f2a66446e4ada831ee4ef75528533/5b99d4b7387e49bb88d44d5ed38ed8b9-55ad2efc2aeb298b54cd5071335ca8ce-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	3.1 小公鸡和小鸭子 第2节	">	3.1 小公鸡和小鸭子 第2节	</li>
+<li value="	http://vv.taozhi.cn/3aa27750d9c74316aad7ef3122ccdf3d/07a665757be54499a989be0c1e41b137-9dd16fdf274c8225b94e499d5d41f25e-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	3.2 树和喜鹊 第1节	">	3.2 树和喜鹊 第1节	</li>
+<li value="	http://vv.taozhi.cn/6c240ce1d95c4550bccf63592429c520/93712754ba8b4a119a835ec3a0ff69b4-5f38092fd89be9d8c2a6115cb916b20d-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	3.2 树和喜鹊 第2节	">	3.2 树和喜鹊 第2节	</li>
+<li value="	http://vv.taozhi.cn/d763267932c24d3196a85c8dc27c5983/103317ab0c8e4c628c57267a76c03b06-1ecd0a4f4b145d793f9c4cc4749329d7-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	3.3 怎么都快乐 第1节	">	3.3 怎么都快乐 第1节	</li>
+<li value="	http://vv.taozhi.cn/0ef7ae3ed12e46a4b5498b2d810ccbdd/b8a2a15545534d54acc66947985e19c9-9c9ef5a7fd41e1b6c0421a0c003af58b-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	3.3 怎么都快乐 第2节	">	3.3 怎么都快乐 第2节	</li>
+<li value="	http://vv.taozhi.cn/71bc5c42be94466286c5f64296071435/ae2cdf0f10c24aeb8bb83fce6f3fdd0e-aa529f6a17b25586613fc7a999f989e2-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	语文园地三	">	语文园地三	</li>
+<li value="	http://vv.taozhi.cn/65f502da829f46c1a7d366266e68ee2b/45c660714aaa4d52bf4f7a33670315a6-4f678b7e0adee98494582da304329aa4-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	4.1 静夜思	">	4.1 静夜思	</li>
+<li value="	http://vv.taozhi.cn/b3998148e99b4e28be6e8ce157b1ae95/f90bee93a97642d9aa1979555f4b7eb6-3fb6ab4f92301fe45e77793bcaebfdce-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	4.2 夜色	">	4.2 夜色	</li>
+<li value="	http://vv.taozhi.cn/2cbff1991a5343668274c43ff6f76f5d/25eba09ddb9d4a8e88050ba2b525b63d-bc99fdb70118d50ebc778af6a47fe14c-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	4.3 端午粽	">	4.3 端午粽	</li>
+<li value="	http://vv.taozhi.cn/98b5dddebc3443219d6ca60909c1ca46/0812c26625714ffe852871ff5afd4c21-716cef09e4c59eecb45f4226bd3f5677-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	4.4 彩虹	">	4.4 彩虹	</li>
+<li value="	http://vv.taozhi.cn/42867677caa245488c271ddd9c082762/4b87514415e94f30bc6982975f7a53dc-1f35482888c2fb654e816aca5763d609-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	语文园地四	">	语文园地四	</li>
+<li value="	http://vv.taozhi.cn/df9a166936414a558d7e76abe3f42a35/44c43736a11c408ebe36830a39f7ada8-58f16a5f4041c77acf116805d295208f-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	5.1 动物儿歌	">	5.1 动物儿歌	</li>
+<li value="	http://vv.taozhi.cn/dab2e542662c4815908a7a36f647d679/dde1fd06408e412eb34b6901afd7de7d-82d4de8fabbe4906d6439d5629f0f916-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	5.2 古对今	">	5.2 古对今	</li>
+<li value="	http://vv.taozhi.cn/fd0276aa660e4030956d335116e481cc/ac6d8828d7cd4456b7c0d12fa20a803c-6725c97ae99436e5b0cb0b95099c6bba-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	5.3 操场上	">	5.3 操场上	</li>
+<li value="	http://vv.taozhi.cn/97ec737a4e624f2484773ee39a9fc828/760b3e1a5c974de2a6d398d7a2c9277c-5a26f0d771e84f097a8ab00231aab896-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	5.4 人之初	">	5.4 人之初	</li>
+<li value="	http://vv.taozhi.cn/9bdb169d786048739e681cf8a6d9f040/a5de6dca124e415f81fbf3ac3415a482-5335d3416b525b610dda0439dc5ed15d-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	语文园地五	">	语文园地五	</li>
+<li value="	http://vv.taozhi.cn/97769a28f570482f9eb18f90b7456bd0/f68810df56de44bbb6744c0ebddb456a-a06c4c3265f60e755ed943a490d80d28-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	6.1 古诗二首	">	6.1 古诗二首	</li>
+<li value="	http://vv.taozhi.cn/b7cbf704ed844381a051266f4d8c57e4/0f0d650b2e28443fa8c4caf51f99f6aa-4b484004f1ae1a4837140dce2b4ffb54-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	6.2 荷叶圆圆	">	6.2 荷叶圆圆	</li>
+<li value="	http://vv.taozhi.cn/2cb3999321784923b62abeba3d732b12/4702ed867b4c481da3778d3a5236d5bd-38100f91b14365326509bdf5408a60ee-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	6.3 要下雨了	">	6.3 要下雨了	</li>
+<li value="	http://vv.taozhi.cn/f7330d22747b4c6e881e39723ebd12e0/4030304178004fd29bacc4a8ca98a821-b27a024b28a0b383c06eda541ea826e4-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	6.4 语文园地六	">	6.4 语文园地六	</li>
+<li value="	http://vv.taozhi.cn/a683243e39a34218984c34b4fb742fa1/206e79ee24ef49ef8fa7141a2225407a-964ca9fea0c493559b1de92a37466a42-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	7.1 文具的家	">	7.1 文具的家	</li>
+<li value="	http://vv.taozhi.cn/94be8bb8f4644d6fa065100da2b4277d/05b2e2cf0c4d4529bc953f88b9180591-40135100b186a989426d1c3938b12cf7-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	7.2 一分钟	">	7.2 一分钟	</li>
+<li value="	http://vv.taozhi.cn/05402ff053fc42d9bf91b776a8d371a7/cb65b0afd6cd4d0eb4d446d84e5321cb-ccb14499793fbf63ff2f3c19414c11d2-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	7.3 动物王国开大会	">	7.3 动物王国开大会	</li>
+<li value="	http://vv.taozhi.cn/3c4af2c9142f4374b34a08fb4a26a971/ec1cd6772f85445eb19c68eb55baaee1-3419d7d608ddfd03a9ac55f8170a9de6-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	7.4 小猴子下山	">	7.4 小猴子下山	</li>
+<li value="	http://vv.taozhi.cn/77df3a1dde6a4d36a2d6d2952dca3bb3/ec47b2ccf3624d8486198391c7805daa-8448c1b32d0ab723be9489d9af7c9fae-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	语文园地七	">	语文园地七	</li>
+<li value="	http://vv.taozhi.cn/d121c73fab8a4a31af7cb15a3471bdd7/10a6af2b10064889b2fd465462496618-5e0e34176d3e85d5d27f96bf7be57fee-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	8.1 棉花姑娘	">	8.1 棉花姑娘	</li>
+<li value="	http://vv.taozhi.cn/6b1263be1feb43079c753cea15febf42/d2763fdee361401d959ae49712042fb6-a10a635dbd37c0dd4dc0be1046896106-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	8.2 咕咚	">	8.2 咕咚	</li>
+<li value="	http://vv.taozhi.cn/e0feef084864434493b72970eed727a7/9198775106b64da6b117a698189e0af5-c4289d32098d4babcec3a384fbc8524d-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	8.3 小壁虎借尾巴	">	8.3 小壁虎借尾巴	</li>
+<li value="	http://vv.taozhi.cn/c4b731fe9f2a4795b1c9a14dae6dd4eb/877893bce1d442c48b1b4ebd0c947725-7c3dea1db8fe00e1c9d417deab058aa9-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（下册）	语文园地八	">	语文园地八	</li>
+<li value="	http://vv.taozhi.cn/5fea7dc560244a6da87752e13ff49a45/ccc4339b3f974d7ab6505e373e2b520a-450968c9b80c5f8c7f7cfedb393713de-ld.mp4	" title="	小学	一年级	语文	传统文化系列直播课（精剪回放）	《教材全解》之传统文化系列直播课——2020“鼠”与我们	">	《教材全解》之传统文化系列直播课——2020“鼠”与我们	</li>
+<li value="	http://vv.taozhi.cn/79d17575b8b64632ab6821e36d85ab20/8fc81816f9514e3eaec184a2b448dfa8-d91ac045906b0ccb4aee4c850b23a4f5-ld.mp4	" title="	小学	一年级	语文	传统文化系列直播课（精剪回放）	《教材全解》之传统文化系列直播课——盼春归	">	《教材全解》之传统文化系列直播课——盼春归	</li>
+<li value="	http://vv.taozhi.cn/f5fed1feaf5b4c6a9ed2086360155658/ea45ad839c7249a8997b9c08af515281-9c78cd8fc4bc480f7b076ee389a819c9-ld.mp4	" title="	小学	一年级	语文	传统文化系列直播课（精剪回放）	《教材全解》之传统文化系列直播课——正月十五闹元宵	">	《教材全解》之传统文化系列直播课——正月十五闹元宵	</li>
+<li value="	http://v.taozhi.cn/94139426a6114a19b195e246b5b667f8/4ab6cd54b9bd41a88f482070ff085c0a-b0f912bb3c04eeb1361a639bd00e402c-sd.m3u8	" title="	小学	一年级	语文	标点金解	逗号（1）	">	逗号（1）	</li>
+<li value="	http://v.taozhi.cn/f0b0b4805b9c4b8eb7feb9ef1c22ed95/b0bb6579703740468f0d7df0af7815f0-c2cad2a27ceb691fae4e583cbb9453ce-sd.m3u8	" title="	小学	一年级	语文	标点金解	逗号（2）	">	逗号（2）	</li>
+<li value="	http://v.taozhi.cn/9539db457792424592c521d9dcdbbf7d/1d593a05409643d1b9de79ecdf1662ed-8fd109887ebde70f9dd67b375b908be7-sd.m3u8	" title="	小学	一年级	语文	标点金解	句号	">	句号	</li>
+<li value="	http://v.taozhi.cn/b2a908b4c11a4927828deb4e0510ede6/dbe25b1e329d4a48979132c9339449d7-14f435245a521c55a2d6fb639273e605-sd.m3u8	" title="	小学	一年级	语文	标点金解	问号的用法	">	问号的用法	</li>
+<li value="	http://v.taozhi.cn/1f98ebefa44b4f709ea8d3de57e5fd6a/d598977078594ac39babbaa5d0c465bc-fc0f14ffedbe2f57032c5ad3fbfe73fb-sd.m3u8	" title="	小学	一年级	语文	标点金解	叹号的用法	">	叹号的用法	</li>
+<li value="	http://v.taozhi.cn/901501f1f5614e3485168c82d089c006/c3ae5e25bf2a45c08f474f7312c5b3cc-63485f3980d8962b4a15c68025fa1f2a-sd.m3u8	" title="	小学	一年级	语文	标点金解	冒号	">	冒号	</li>
+<li value="	http://v.taozhi.cn/b6425f20f4d747ac951c2a673dd1cfa4/e18978c02e524bc88fb0af0759854bb7-74df647a7a52496c1b59d8d380a628ea-sd.m3u8	" title="	小学	一年级	语文	标点金解	引号（常见用法）	">	引号（常见用法）	</li>
+<li value="	http://v.taozhi.cn/199a07afde2242de942d39b784b2101c/402c2a5e85594491979b455459fbe2cc-ce060fdbc40fec915b6b111f5952c068-sd.m3u8	" title="	小学	一年级	语文	标点金解	引号（注意事项）	">	引号（注意事项）	</li>
+<li value="	http://v.taozhi.cn/835b2ea7b5cf4e219d1dd10977271b86/8ee0ac8e7455479d9556fae7ecb4ac9d-fc12c3fe7178f18b497eaf6927eee525-sd.m3u8	" title="	小学	一年级	语文	标点金解	分号的用法	">	分号的用法	</li>
+<li value="	http://v.taozhi.cn/dd6227fb79af465590c3deb588d6fcab/85d537451c0c4d16bce2133d859cc58e-ecafdcca3c377b28aec9c692fdc21a90-sd.m3u8	" title="	小学	一年级	语文	标点金解	破折号的用法	">	破折号的用法	</li>
+<li value="	http://v.taozhi.cn/182ebe0a569b45419cc9d233830d54cc/8f3f1103ec8c445a854429814ba4ea5b-462f93cf1dd29f5c727387d087dc581f-sd.m3u8	" title="	小学	一年级	语文	标点金解	省略号	">	省略号	</li>
+<li value="	http://v.taozhi.cn/f999fe2130fe408b89ec65d0c9fa29a0/2dcd0a3ed6904471a45d58e4722347de-d879a6d7d7f94894326210155abfa668-sd.m3u8	" title="	小学	一年级	语文	标点金解	逗号与分号的不同用法	">	逗号与分号的不同用法	</li>
+<li value="	http://v.taozhi.cn/42a697a98ed14f7dafef02a0365a1884/9adfeebd8e574488bb4d0fa68ebfe82a-62d39f53cf038e4eedd5b0dbcbf93b70-sd.m3u8	" title="	小学	一年级	语文	标点金解	顿号与逗号的不同用法	">	顿号与逗号的不同用法	</li>
+<li value="	http://v.taozhi.cn/21761612586446698fd3d32b3db58bf2/50af97e60369416f86376a6330273b0f-d62d4692cd0e250b00bfe569aa024de5-sd.m3u8	" title="	小学	一年级	语文	标点金解	分号与句号的不同用法	">	分号与句号的不同用法	</li>
+<li value="	http://v.taozhi.cn/b9fd39f00f2749e89714e9ab7d590a8b/20b0adc9c51f436ca4e785982cecb747-2c01439c942857c097efc12c903be519-sd.m3u8	" title="	小学	一年级	语文	标点金解	逗号与句号的不同用法	">	逗号与句号的不同用法	</li>
+<li value="	http://v.taozhi.cn/2708658d3bcf40ff8cb3d7a77326b48d/2e2e1bb33b6641e08f0d553e119c7c7f-ca3773450d2eb93f82fe9c1cc33107e7-sd.m3u8	" title="	小学	一年级	语文	标点金解	冒号与引号的不同用法	">	冒号与引号的不同用法	</li>
+<li value="	http://v.taozhi.cn/fd1a797c20dc4439b8b80869bb4ea59a/349b14934c964b2981d190efd33a6a20-8e7bebea37744341628496dea5d011b4-sd.m3u8	" title="	小学	一年级	语文	句式金解	祈使句	">	祈使句	</li>
+<li value="	http://v.taozhi.cn/c7474d6adb6945dfb8de5f3a3b8edf25/87234d4e79e54d3d84a443022d47e52d-d983a6920d4690d67676347616dda10a-sd.m3u8	" title="	小学	一年级	语文	句式金解	反问句	">	反问句	</li>
+<li value="	http://v.taozhi.cn/3a177f751f464e51b837043acc473499/d39ddde3573b40fcaa33faf5faff35f4-4f27f95031e41297dd9800a5bb8d9711-sd.m3u8	" title="	小学	一年级	语文	句式金解	双重否定句	">	双重否定句	</li>
+<li value="	http://v.taozhi.cn/ad1023f539944d72b4270bd233895e70/459558df765146de8372583f5965b50a-5be851f0aef0770cfe43143803310590-sd.m3u8	" title="	小学	一年级	语文	句式金解	引述句和转述句	">	引述句和转述句	</li>
+<li value="	http://v.taozhi.cn/b0da24a352124a48b53ab4472fe8695f/1760fd24ee4e4d63b62cd805e9845643-30840766e4dd0c7c2dda884e48c5a500-sd.m3u8	" title="	小学	一年级	语文	句式金解	倒装句	">	倒装句	</li>
+<li value="	http://v.taozhi.cn/9ad5353d91b74a2dbff0a9eeb275a855/d03bff37cfc845fcaa7a027cdac0eeca-7f7c6a488e1fd38ded7f15c020b7aeaf-sd.m3u8	" title="	小学	一年级	语文	句式金解	连动句	">	连动句	</li>
+<li value="	http://v.taozhi.cn/7b599fe95c7d467cb12cdcba03fb9c33/d6520adb1f614ad9b45ef8e765bc6a65-da3408bf97fd5e53789e51e9f54f9f3c-sd.m3u8	" title="	小学	一年级	语文	句式金解	陈述句（1）	">	陈述句（1）	</li>
+<li value="	http://v.taozhi.cn/86ebeffcef784e5aace4b0ca496aad98/eb800fd7ac334606b9973695b3b8ced4-01fb6887a0a89b2f7dc02f97a88f1ae4-sd.m3u8	" title="	小学	一年级	语文	句式金解	陈述句（2）	">	陈述句（2）	</li>
+<li value="	http://v.taozhi.cn/46d774dadf39430bbc15e307211c5f25/bde73de34f8b44788c9bc08f57ec3acb-b0398e1d1ac9983e745f5ed24d7fa4c6-sd.m3u8	" title="	小学	一年级	语文	句式金解	感叹句	">	感叹句	</li>
+<li value="	http://v.taozhi.cn/047b887c1167423db16844f43eff0b12/d9c6134cad2444ceaf3b2b29418402df-b6d3a15a87ddfa0823e9b2763722dc88-sd.m3u8	" title="	小学	一年级	语文	句式金解	疑问句	">	疑问句	</li>
+<li value="	http://v.taozhi.cn/5f5cd1ebde5d4e3ca0943ea8a105c159/d4f74a5dd27743d7915370e9ed09716e-94ed5e30ae008fa10a5a1b201741d09c-sd.m3u8	" title="	小学	一年级	语文	修辞金解	排比	">	排比	</li>
+<li value="	http://v.taozhi.cn/6993f87850ad4f14901d68032fa3db69/afada0d9b8974fc3baea4d9557b8fa1d-c0e3b39ef56ac176c91c414610e35b76-sd.m3u8	" title="	小学	一年级	语文	修辞金解	借代	">	借代	</li>
+<li value="	http://v.taozhi.cn/a3ffacf9939d4ca08801c5a14fc2d89d/eda6d2dd44a44fe0b439d2de9bef470c-36c661c81c5b1b3337fbf52850b4b7b4-sd.m3u8	" title="	小学	一年级	语文	修辞金解	对比	">	对比	</li>
+<li value="	http://v.taozhi.cn/7020630301ec4821bef6f52991ea2f0b/56790cab2893420d96910443cad1c837-85cdc8364196e3bbf80d8d5163ab4edc-sd.m3u8	" title="	小学	一年级	语文	修辞金解	设问	">	设问	</li>
+<li value="	http://v.taozhi.cn/89d7dbb3ca124848b712e3ac8cb77f66/d088ae0117a24da4af399f3724be04cb-26064fb2c232a5de53718aacd6408568-sd.m3u8	" title="	小学	一年级	语文	修辞金解	反问	">	反问	</li>
+<li value="	http://v.taozhi.cn/aa98572ad6a04aeca6d6a0a81b078d92/1b79d4fd827b4b08b58a734126a54a97-6247d8cba5a2450a064d087a6cfab6c2-sd.m3u8	" title="	小学	一年级	语文	修辞金解	双关	">	双关	</li>
+<li value="	http://v.taozhi.cn/0109742096774889894856053e8d6c4b/152b562a15004ba98de6ea15c8d1a00c-a7296c9d4641b99d2609f982bcbca7da-sd.m3u8	" title="	小学	一年级	语文	修辞金解	对偶	">	对偶	</li>
+<li value="	http://v.taozhi.cn/d00ac35236ae45bd832c431149377a9a/d855b36948c9440c9c978b0570ad03a7-ba538fd2935880bfed112a9731bcc16e-sd.m3u8	" title="	小学	一年级	语文	修辞金解	反复	">	反复	</li>
+<li value="	http://v.taozhi.cn/aa648760d4134c8db4c36008a5408a24/2fa63d44f30a479cb199c11431794e52-e248fc1a7997c499b5322a427be28fcd-sd.m3u8	" title="	小学	一年级	语文	修辞金解	夸张	">	夸张	</li>
+<li value="	http://v.taozhi.cn/021e47661b0f44ea9d967d29e79ff674/5e2fc6d45cfa4b5380dcc2e9024088d8-92b13c2f6e8cc6b7200a37695a24b761-sd.m3u8	" title="	小学	一年级	语文	修辞金解	拟人	">	拟人	</li>
+<li value="	http://v.taozhi.cn/b28a8b0341ac4cccb92b14cf9eeb0d23/af93608360a247ad839eb4b4af41f441-faa6ef4a261456ccc7cfd303d97edb53-sd.m3u8	" title="	小学	一年级	语文	修辞金解	暗喻	">	暗喻	</li>
+<li value="	http://v.taozhi.cn/6390268009f343fa884843d0b2f17d1f/c333155aaf6f49b3b825df9f30e64a9e-4ee34fa2c862d1a3a8ddd0dc57da58e0-sd.m3u8	" title="	小学	一年级	语文	修辞金解	借喻	">	借喻	</li>
+<li value="	http://v.taozhi.cn/033a02e0a85e41998ce9b37c3db796e4/cc137c19636647349f455f0891b18cee-68cf218f738edad9332823e67567a23c-sd.m3u8	" title="	小学	一年级	语文	修辞金解	比喻	">	比喻	</li>
+<li value="	http://v.taozhi.cn/148e8022c8874d04983620a4c6f40f60/7e715c4035ec474985f01c3a43d892cb-0868b959e86b418fbab5ad9afb004a3b-sd.m3u8	" title="	小学	一年级	语文	句型金解	并列关系	">	并列关系	</li>
+<li value="	http://v.taozhi.cn/945e14ef899248fba9549d53a98a82db/ff74e6319c8244a7b2207b5b117a82e4-4df60b217a73e1826e90d9640c9bc93c-sd.m3u8	" title="	小学	一年级	语文	句型金解	承接关系	">	承接关系	</li>
+<li value="	http://v.taozhi.cn/392225911f1b41ea9b34f78c6dcddcf8/ef05c8da4efa42d58d3f3d6bbe1ba7b9-8c2c3e3d2bb11c6b89b633ecfcd34e14-sd.m3u8	" title="	小学	一年级	语文	句型金解	递进关系	">	递进关系	</li>
+<li value="	http://v.taozhi.cn/ffd28ed16b8b474bb0ca20665ee3953c/f23c6b3bd4ba4ff9b7b219a541ad1dcb-04d5b0b10755959f42ccbd69f47c7fa1-sd.m3u8	" title="	小学	一年级	语文	句型金解	选择关系	">	选择关系	</li>
+<li value="	http://v.taozhi.cn/4f613e397d8c4cb1bd20af8b27183212/e2d5645864e642589d09289ba9ab9a7d-00d130529a60e03c5a75df0f7061bd31-sd.m3u8	" title="	小学	一年级	语文	句型金解	转折关系	">	转折关系	</li>
+<li value="	http://v.taozhi.cn/d2533fe547984e0d9a195c742d1aeae3/d346800bf7b2406d8f241e642e97cb3e-b294451e236c3ba7d2ed19e47bfbd3de-sd.m3u8	" title="	小学	一年级	语文	句型金解	因果关系	">	因果关系	</li>
+<li value="	http://v.taozhi.cn/8e8ae14c450444838296ff500a5c6524/2b63d31007ae4bef981c98fcff49c3ec-bca65cb2472cae37c2b320a4062b30ca-sd.m3u8	" title="	小学	一年级	语文	句型金解	假设关系	">	假设关系	</li>
+<li value="	http://v.taozhi.cn/534dd8b18b5e4df1916814154da3f952/6e4b20d8607d46f4b30ceb819c5ce52e-152e74ff13a04303018c7011b84bbc15-sd.m3u8	" title="	小学	一年级	语文	句型金解	条件关系	">	条件关系	</li>
+<li value="	http://v.taozhi.cn/92ceb8ae2c3a4c9bae3a8968500be382/e99e78d00589423a84208ff935278007-c6c9c8a433f0cafb9635616a62553e33-sd.m3u8	" title="	小学	一年级	语文	句型金解	目的关系	">	目的关系	</li>
+<li value="	http://v.taozhi.cn/ab399e9dd6eb441b91b6a69e1a8fef5e/3dbe9301119a42c1b4bdc90876a5af80-5c6ee3d1f0bf1f2c18bc2cc15b7f3bc5-sd.m3u8	" title="	小学	一年级	语文	句型金解	总分关系	">	总分关系	</li>
+<li value="	http://v.taozhi.cn/9fe5c8ef630b449f900e160bd9215338/f1dfd8e7decb4cceaf03ffa7b56622ca-56e0e0c0e49d20a9cae2dcb97fd3fbef-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句总述	">	修改病句总述	</li>
+<li value="	http://v.taozhi.cn/43619e72c1b74babb6187797536ac076/90e3f13ab3d14e708a5ae1cfc056a184-c20501d6e5b5a52c280443fd9e0d642b-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之成分残缺	">	修改病句之成分残缺	</li>
+<li value="	http://v.taozhi.cn/b8c5950d63bd40bc8e147222001b25db/2c7ab2a4af6d4049a0e60fd4a197e306-1bbe7df81427949763ec0d01ed497e25-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之用词不当	">	修改病句之用词不当	</li>
+<li value="	http://v.taozhi.cn/e0965e5e5ab542458dbba0c93e57d708/264a75f682fb41fda29283e232febc24-d7d14a909399201cdcad539c20543960-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之搭配不当	">	修改病句之搭配不当	</li>
+<li value="	http://v.taozhi.cn/508e93add8c94a5297c8c73ee43e2921/b045cc93c0db4d73afdf11202ddaad69-d04710240654a93346b72af8357932bf-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之词序颠倒	">	修改病句之词序颠倒	</li>
+<li value="	http://v.taozhi.cn/2a4e2eebeb394c57beed37824741fa5b/0fd1e805e7c24cb990cf9831e9afd197-9f9ac203e3e7ba40b636b121bb2145ea-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之重复累赘	">	修改病句之重复累赘	</li>
+<li value="	http://v.taozhi.cn/3673f6ef2e024fc59d5c79a747b1f636/08a29216dfff413a97d3b8c477eb33d8-7c42abea397b0da80da32c2b49df9e35-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之前后矛盾	">	修改病句之前后矛盾	</li>
+<li value="	http://v.taozhi.cn/dd60005f4ae14b079083e647097f0a2e/2a566e0ce4ac447e89377f16ead3b223-beb6a616931ff495258c581e3ca2a690-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之归类不当	">	修改病句之归类不当	</li>
+<li value="	http://v.taozhi.cn/72998f717404437194c66fd6753a23dd/8a899f84f0ec49218754a16d99ece558-ced37cb7e0d39e1b8e5c933566de8385-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之概念模糊	">	修改病句之概念模糊	</li>
+<li value="	http://v.taozhi.cn/c22ad5b857ea4d6e9f08984a24ffdbea/ed65734aed44430093791c84b15f0884-6dee6adc187ca0a87f1f6b521f9102f2-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之修辞不当	">	修改病句之修辞不当	</li>
+<li value="	http://v.taozhi.cn/8d4838929c5b4890ae72416524eeee1e/f540f493319f45f0b7b300d0809c49eb-f2a2be0872b3ce88dd8eef46eccb6b80-sd.m3u8	" title="	小学	一年级	语文	病句金解	修改病句之褒贬不分	">	修改病句之褒贬不分	</li>
+<li value="	http://v.taozhi.cn/240920fce17441e7bd2f168ea93d41df/76ba5407215c4e01938fe64f988860a8-ed1898a600d985300f60786cdb2a8a87-sd.m3u8	" title="	小学	一年级	语文	拼音金解	ang eng ing ong	">	ang eng ing ong	</li>
+<li value="	http://v.taozhi.cn/1487ce19e3ae46e3ad3b8b4e2bacdc40/3c42b733f8944207ab5007fc414d2f4b-12b9b8406779a074ef58421355c9f3a5-sd.m3u8	" title="	小学	一年级	语文	拼音金解	an en in un ün	">	an en in un ün	</li>
+<li value="	http://v.taozhi.cn/e05f39bf5587468da2056100a48faf7d/d7a9f5af67834d22897ff612a177c467-e42f4acf416e720c74b5682cbf59c5c3-sd.m3u8	" title="	小学	一年级	语文	拼音金解	ie üe er	">	ie üe er	</li>
+<li value="	http://v.taozhi.cn/25f05e4d8fb84cfbbfb78c20e4cc3829/9c573799d33f474489682c737557114b-ef188a2fc0519be25af7751195200f03-sd.m3u8	" title="	小学	一年级	语文	拼音金解	ao ou iu	">	ao ou iu	</li>
+<li value="	http://v.taozhi.cn/409fd4a7d4944dba8d67c6d111105730/acb9313ac7a543358821bcb700c58478-289630df6144ac9c3856a6ed79d481ee-sd.m3u8	" title="	小学	一年级	语文	拼音金解	ai ei ui	">	ai ei ui	</li>
+<li value="	http://v.taozhi.cn/4cc58d7693f74126ab9f1987e649053c/a6db989408c54e8589e5c1bdbfc504a8-e978d9b0839294ba0ada594c8ca70a5a-sd.m3u8	" title="	小学	一年级	语文	拼音金解	zh ch sh r	">	zh ch sh r	</li>
+<li value="	http://v.taozhi.cn/74d124312c2b4220b4f4fefc10c50c21/6b4c403e102e4854a55584d32ea568cd-1e5d9124125b25caeab4caedb0d9ce12-sd.m3u8	" title="	小学	一年级	语文	拼音金解	z c s	">	z c s	</li>
+<li value="	http://v.taozhi.cn/3e32ac00132a4f43846a5decc3d5488a/5b142fa5a59949c4b9215fe1bb8494b0-118af304e246547f89838fda3f6e1f21-sd.m3u8	" title="	小学	一年级	语文	拼音金解	j q x	">	j q x	</li>
+<li value="	http://v.taozhi.cn/308c38172e884adfb91489cfdd491eca/b4d9cb38613e43d0a11450e06700336a-90ef56b0fbfd0346fe28a928e6318392-sd.m3u8	" title="	小学	一年级	语文	拼音金解	g k h	">	g k h	</li>
+<li value="	http://v.taozhi.cn/037d1c80f65b4dedb9ed46ece647eb55/daadee42ee2145ae904c3c785072a505-3486359e9dc34f43e878179fcd476495-sd.m3u8	" title="	小学	一年级	语文	拼音金解	d t n l	">	d t n l	</li>
+<li value="	http://v.taozhi.cn/94cb2e61145e42c0853fba09ed95afd0/924d9ba024904a4e8f7846c1eb1afae9-96a5f60b32ff5d97bdbc2914d11f5321-sd.m3u8	" title="	小学	一年级	语文	拼音金解	b p m f	">	b p m f	</li>
+<li value="	http://v.taozhi.cn/19472bb5fe8e4d71983112c39ce54917/5660184a06a845e5bc80571c47137367-e3df2930a166fbb44c9b66436359bb13-sd.m3u8	" title="	小学	一年级	语文	拼音金解	y w	">	y w	</li>
+<li value="	http://v.taozhi.cn/8b00ac3c67024269b6411d87ef3081ce/a4cd0e0650024f6a8fd1883cdd4b646d-03e1c0a67e2f9fb130f43245ffbf487f-sd.m3u8	" title="	小学	一年级	语文	拼音金解	i u ü	">	i u ü	</li>
+<li value="	http://v.taozhi.cn/9973ce396bdc44c68926448ee378cbfc/d8d8062c2b6748a390b25e12fedd4346-315ff54b8abcfaddb9ffaf8662689e7d-sd.m3u8	" title="	小学	一年级	语文	拼音金解	a o e	">	a o e	</li>
+<li value="	http://v.taozhi.cn/e659f9aa1e0d41aaa59378acae708012/dfd2f5bc3e3c4657a87ea4e77c4a8e0d-c1e4f6e5660820f58906d4ae76ac635f-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	句式：事物+所处的状态+ABAB的	">	句式：事物+所处的状态+ABAB的	</li>
+<li value="	http://v.taozhi.cn/7b109460bf5448a6892d4f386b1de8e8/3865c6f7e3b648a5b694da6e6a8303b8-e01dc01483e8500a73e3f4e39110ef64-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	句式：……但是……	">	句式：……但是……	</li>
+<li value="	http://v.taozhi.cn/27d96ab83c604c94b7085ce35fb3a4a0/c41ee5ef85154f75acffdb98182722ab-9ad55410a2941cf986cfeebd9fde060b-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	句式：设问句	">	句式：设问句	</li>
+<li value="	http://v.taozhi.cn/73acb96c094b4f8194f3bbde106542ef/df641c1d441b4461858dc6459d34a6d7-a374ea8c5871a5285f8d803c3bcfe42b-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	句式：事物+AA的+又～又～	">	句式：事物+AA的+又～又～	</li>
+<li value="	http://v.taozhi.cn/d338073f5bd647da91e41ddbca185ae9/da52b53652264f4ba6ad1c48d2ce6bb4-1e2b39067d8bb3de612f6b3ac5262ea3-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	句式：有时候……有时候……	">	句式：有时候……有时候……	</li>
+<li value="	http://v.taozhi.cn/5a3660b0302443f28087dff9861bd750/aee4997d338345f7a3e25d4b0647479e-60f58473583d719ec66fe4d1f822b288-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	句式：疑问句	">	句式：疑问句	</li>
+<li value="	http://v.taozhi.cn/5ceef7bfdee445258feab610ae0ebbc4/03c297a42bbc42cb8633fd15bde19c64-4513333c176676986490c79ded31e4f9-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	句式：……更……，……更……	">	句式：……更……，……更……	</li>
+<li value="	http://v.taozhi.cn/f204b424f7734fe2964265245da461f8/a4c43dab6d714793b6410cef2dcc272a-f086234afad62b44eb87b1d776da1611-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	用ABB式叠词写句子	">	用ABB式叠词写句子	</li>
+<li value="	http://v.taozhi.cn/ac66f69cb42b420c9718db168e3a848d/847a1df536634013a36f2e46dd54cffc-a01e26b4257f33bcbd8e5334c4349b79-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	学写比喻句	">	学写比喻句	</li>
+<li value="	http://v.taozhi.cn/4f962c0818d84e68bdca9ad65b70eded/ce7575db0c17403d9b1e8843d300984a-bbc9d9764e011df6a138ef8394983972-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	正确使用量词	">	正确使用量词	</li>
+<li value="	http://v.taozhi.cn/7d57e53e45064f4fb0172b771d537d60/f35063cf7f7741f79ee594f4093e2948-e9b6cc3d8cae39ccd3e5ff11be233e0e-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	怎样猜诗谜	">	怎样猜诗谜	</li>
+<li value="	http://v.taozhi.cn/bdadfda0093648e998c863830aa5bfe7/46b9120ecdf34b20bffd0e624b7eaaeb-e68f3b51016006745518e05ce9f5a5f1-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	拟人	">	拟人	</li>
+<li value="	http://v.taozhi.cn/23810c76c6724561bbfee044a6ab636a/3f6204859dde4ffeb876d168aca2e2de-41e28dcfcb37a78de3902ae183a69a8e-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	用表示方位的相对词语描写人或物的动作	">	用表示方位的相对词语描写人或物的动作	</li>
+<li value="	http://v.taozhi.cn/1adcd0fc2143407ea8561097ee71e231/3ef05f0e3f584ceb92994d2dbe5b807c-a6310a0d52f93f5de441e2d080eec4ba-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	句式：弯弯的……小小的……	">	句式：弯弯的……小小的……	</li>
+<li value="	http://v.taozhi.cn/4591a50a99a544ddbf29399c22b890d8/78e5cb641b0a44c1b4317488ef97c6fe-b3ccc94214a8edb4b2e1f9821071b7b3-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	句式：那么……那么……	">	句式：那么……那么……	</li>
+<li value="	http://v.taozhi.cn/52844ad4a972462bb80bfa9131535a13/68456d2d5f984a2a8ad57256ac33f6b3-d852025f809fbae7e8df3dc2eac5bfee-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级上（人教版）	拆分识字法	">	拆分识字法	</li>
+<li value="	http://v.taozhi.cn/684f1972807142a49f3160d1c9cb2ae5/543ad16b92f04f88bea7cba30d5f02e8-d967fce5004d8d8a1c069a941a053e95-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	学写主谓式短语	">	学写主谓式短语	</li>
+<li value="	http://v.taozhi.cn/b9dc4d0822684687abf2ecbbfae1f6e1/1c8dca99bd0645f6b9cb0f9834a6bcd1-a43168a850940c206df23a873bbe5fcd-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	说偏旁记姓氏	">	说偏旁记姓氏	</li>
+<li value="	http://v.taozhi.cn/787c1bea6e304b2abeb2c43963b50def/83f7a57a13f0463ba092da9022e13a39-a1b5a7fd4a6f992d1f37c7d69e635b96-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	用“AA+事物+特点”的句式写句子	">	用“AA+事物+特点”的句式写句子	</li>
+<li value="	http://v.taozhi.cn/b982e402e8484bf7a1f0d6db94a04ca1/a9956a077d084abfacb7ee4225f7f3d4-32b0cf1ac1a7aad2e9fa7fb95e97589a-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	编字谜识字法	">	编字谜识字法	</li>
+<li value="	http://v.taozhi.cn/86cc9f15390148e3b662a328ff3551b4/ee90ef1c96f14ad7a1630fb7ef50aafb-0a27b6888d4099205927c780b6cec0b2-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	按事情的发展顺序叙事	">	按事情的发展顺序叙事	</li>
+<li value="	http://v.taozhi.cn/5f7247dd80a040ab97c9c2c5153705cf/874674472c3d444b85121ec0dd56b463-90eb465d7abedbf777bf9b25b53743c6-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	构词：--的xx（偏正短语）	">	构词：--的xx（偏正短语）	</li>
+<li value="	http://v.taozhi.cn/c1404e4de2f741c9aa31956778e6d82f/9d629b24f112442ca9f11a50fbd70f11-01dd4c67d6b358525f08776d253fdfe7-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	用“……却……”写句子	">	用“……却……”写句子	</li>
+<li value="	http://v.taozhi.cn/2b6259e2e44943738a2a6beea14269c8/dfdc7db23d7c42b88d7696ae9c64981b-3ba827e339fe49932664c829ad4a4009-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	认识自问自答的句子	">	认识自问自答的句子	</li>
+<li value="	http://v.taozhi.cn/95c3733166af4de99beddc76962d68fd/8eaa6cd0ee594f2eb6ec2c644a4b6e12-60306d1f5917d2c02cb956700f0af17f-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	学写“得”字短语	">	学写“得”字短语	</li>
+<li value="	http://v.taozhi.cn/c0e8112875a245a097b2b2814c094270/b6e4a8b80d48475f95a0e40b1bac4869-51698ca4d2413cbe1454f6903bef3da4-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	用“……也……”写句子	">	用“……也……”写句子	</li>
+<li value="	http://v.taozhi.cn/0086484ae19c43be9f84a803660f510a/b90eae94194840fd9666ab087475c172-2647aab53e81fea3076a9ff7cb944c34-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	学习“动词+名词”的短语（动宾短语）	">	学习“动词+名词”的短语（动宾短语）	</li>
+<li value="	http://v.taozhi.cn/ed144259b0674490ae88a0dd0f16d172/44a7d4ec45ab45cba86a29416f3ba786-cccbfda34003ece043acfcb6eae4463e-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	使用意象寄托情感	">	使用意象寄托情感	</li>
+<li value="	http://v.taozhi.cn/3a414da3bd9147588cc9fb28dc9e8ace/7c7b10dcb95547a0aa6e6f3ed03124f5-1ddff7fa0ec973e10e6ad43b698fccee-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	用“一……就……”写句子	">	用“一……就……”写句子	</li>
+<li value="	http://v.taozhi.cn/c137cb9381c844d0905ddfd527add6c7/4c374497b99c44ac970a51539b1e7b22-49b0d59b657983f0f2cf9c0cc5b20e05-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	运用“又--又--”式词语使句子更生动	">	运用“又--又--”式词语使句子更生动	</li>
+<li value="	http://v.taozhi.cn/2d3610ddfbd94f1a9a4c05fc0ffa4b17/60f61453ae3a47fca00bad20712e03fe-6e41b86102197ffeffd3236895d4d2ab-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	句式：由“如果……不就……”构成的反问句	">	句式：由“如果……不就……”构成的反问句	</li>
+<li value="	http://v.taozhi.cn/bfd4926208d6440782449944f86b2f7d/e8c58af903764c4f941ab51dd6064c42-997fde987a73268c143f4bf1d491c161-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	句式：谁在哪里干什么	">	句式：谁在哪里干什么	</li>
+<li value="	http://v.taozhi.cn/6cce2882491e4cd98240175bf494bc8f/58ece82475c2448f8e5687388bf87f75-f85dbb2cda9117f052bb3121aa9822f1-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	如何写词语的反义词	">	如何写词语的反义词	</li>
+<li value="	http://v.taozhi.cn/294c31d19a6244e6962843a4bf156a93/c66df10fec254540b34641a9b7e6a3de-79b95401a932a4f83310d1689c6d64de-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	学写“动词+名词”的短语（动宾短语）	">	学写“动词+名词”的短语（动宾短语）	</li>
+<li value="	http://v.taozhi.cn/700d2aedb25147ee863f82f76e547953/5d8a83d308b4400c87c280bade9776bd-62f6e0af6332557927b411c099b199b5-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	“加一加”识字法	">	“加一加”识字法	</li>
+<li value="	http://v.taozhi.cn/1640f86353a643fe877970f934b44e66/06eb5aab86d54ed797de080386f93c13-50616fbd24195cc8865f09b446b8acbc-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	白描	">	白描	</li>
+<li value="	http://v.taozhi.cn/3d0f566435d0455ca1f8757c62876863/ed4ccd1de2f44dadb979c744dac430d5-e1b5e2325f664834174e4b258bf46551-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	学习用多样的句式表达	">	学习用多样的句式表达	</li>
+<li value="	http://v.taozhi.cn/db978f6f2b0747a384e24ab2d183da5d/8e96bc151f55418995d71b393a418f95-b5796dc744f49ae97bc8f44ce8bd0ff7-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	学写“--正忙着--呢！”的句子	">	学写“--正忙着--呢！”的句子	</li>
+<li value="	http://v.taozhi.cn/e866547e1faa40ba925846b351898859/285859c401d745159c746fd3878a957f-04d058e10e8294d8c3fc0f410522c93e-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	用“一……就……”写句子	">	用“一……就……”写句子	</li>
+<li value="	http://v.taozhi.cn/94613930762040ce826c125317eb7881/ad12cbec2a2a45529718e1d789a8bb97-c21ce0ed599d86d678eb0e56536d7edf-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	句型：要是……就……（假设关系）	">	句型：要是……就……（假设关系）	</li>
+<li value="	http://v.taozhi.cn/f5d90ad4c1924c75ae2ebbded763e172/719c1ae84fd2450091d7426ecbdd4713-a213084d9de7a9a4e12678fab82d31ee-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	认识祈使句	">	认识祈使句	</li>
+<li value="	http://v.taozhi.cn/266f92a645f74433ab5e31cbe38c4cba/7aed9bd19fb94d3d9ddb9c303cef6332-67353ac96fcccefa1173ed1d4685f3b6-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	准确运用动词	">	准确运用动词	</li>
+<li value="	http://v.taozhi.cn/eb263b3bbc334d4590fa670e27b2138c/2c98c3bc8fd845a58d662d4bd0e132f6-648d1122c595e098b9d90346f6eb106a-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	构词：ABAB的xx（偏正短语）	">	构词：ABAB的xx（偏正短语）	</li>
+<li value="	http://v.taozhi.cn/dd2ac87f978a4be091d6d57ad9101b9f/e69a3c9c15d8464e93f03ed4811c290a-3ffd7c60461fc2ebf29b8612e10520ab-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	用“一边……一边……”写句子	">	用“一边……一边……”写句子	</li>
+<li value="	http://v.taozhi.cn/8bc6d5b88a4643e7a3cddbc149cd3965/10f1d7d595d44b22a382e1f462d697d2-47793e9e1b3a5a9ff370120962391e32-sd.m3u8	" title="	小学	一年级	语文	【方法金点】一年级下（RJ）	正确使用“吗、呢、呀、啊”	">	正确使用“吗、呢、呀、啊”	</li>
+<li value="	http://vv.taozhi.cn/f83ca75a33a34b5488f26eaead876b8e/f7067c89676b4eec9a1696dc04e0bea3-4fceb7a40e8a1930f98f43484c0fae09-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	1.《腾云驾雾》	">	1.《腾云驾雾》	</li>
+<li value="	http://vv.taozhi.cn/1b33fcf6c7bc438a91e9f9478ea9f480/48c19d470cc549be8526baef020747ad-cd3ac228105ac247161b52d24f319708-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	2.《巧取豪夺》	">	2.《巧取豪夺》	</li>
+<li value="	http://vv.taozhi.cn/3ecb13e68a9e4ba8a38e7e4baa24c2db/0984b39b4c2c45cc850257051b87d147-e77c1f3f940c12e194450c3864c27282-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	3.《火眼金睛》	">	3.《火眼金睛》	</li>
+<li value="	http://vv.taozhi.cn/82fe885677a84fbf94b2cbd1fc891743/4a1bbfd5eedc480aaac63ebb6d43a536-dcf38ec1ee2881f887869e3c15a18fdd-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	4.《相貌堂堂》	">	4.《相貌堂堂》	</li>
+<li value="	http://vv.taozhi.cn/8afbeeb86f90454b8bd6ce93a4c9b6fb/be044cbbcd5f401b8c340664b26a34d3-3683e6d65846c059ee3b25582f66d9c6-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	5.《提心吊胆》	">	5.《提心吊胆》	</li>
+<li value="	http://vv.taozhi.cn/446a1cd3c8924a03a80bad181f2b831b/179726c4308b4ac4a0afc662ca76237a-13b4eb7b22af5c11269fba48713a7b7d-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	6.《戴罪立功》	">	6.《戴罪立功》	</li>
+<li value="	http://vv.taozhi.cn/8b6d042d803b4a279621b51f3d721b3f/17fbc3901f0842d2b37e716366a92a1d-4a84be79c77831718b678f30cff9c634-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	7.《油嘴滑舌》	">	7.《油嘴滑舌》	</li>
+<li value="	http://vv.taozhi.cn/62a7b760516e46638429d93016001ac6/66c1e38db5bf4547b74d43b457854ef4-8a5f0b75496b0804efd95ec93867ec1b-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	8.《吃苦耐劳》	">	8.《吃苦耐劳》	</li>
+<li value="	http://vv.taozhi.cn/bf90c0acd19a49cb93c460aea4ce6224/a75f616d64524f219ecceefa9e0f8457-70bcecf4fbf31dfc2e71f49afa29b989-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	9.《趁火打劫》	">	9.《趁火打劫》	</li>
+<li value="	http://vv.taozhi.cn/1c83c58c29ee40bcb98712cbd6107545/a367f7fc8ba949bca3a252b173473880-495983958435bf7fa97b175651889734-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	10.《原形毕露》	">	10.《原形毕露》	</li>
+<li value="	http://vv.taozhi.cn/1a3880660a664686b8ec241828b64df6/5e03363750ee406f8c20cbc95bb9900e-11d8eaf77a9e0c9aa51ebccbaf1b85d7-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	11.《虚情假意》	">	11.《虚情假意》	</li>
+<li value="	http://vv.taozhi.cn/5a738018ec204f098182db63a14f56b4/875c21a444634fcb8e3a493a022cecb1-75116d40a35b046d20a3d6dd129decbc-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	12.《冒名顶替》	">	12.《冒名顶替》	</li>
+<li value="	http://vv.taozhi.cn/5dd74000192a4bba80a983f767b5ae33/588c6c554f4a4b348889dd4b30d590ea-458788aafe378402ac8dd693f5d8a9c8-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	13.《金蝉脱壳》	">	13.《金蝉脱壳》	</li>
+<li value="	http://vv.taozhi.cn/58b8c868c82a4f0db3309a76acc84943/3b841e70b2fa49e7bdedcf6c3c3964ef-743844a6baf9fdabd65a4ddf7ae763f8-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	14.《垂涎三尺》	">	14.《垂涎三尺》	</li>
+<li value="	http://vv.taozhi.cn/e4ae4cf749104f2ab38f48af191525e2/a48476796da44c54bdaf6a10ff705495-81668efa2fb499cc6745502988e97779-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	15.《胆大包天》	">	15.《胆大包天》	</li>
+<li value="	http://vv.taozhi.cn/69d017a829554a2893a77730acabe898/6edf159e911e41e8b398072e0ad26a02-2efb1abb1a0adc91f3b86d5a2080c086-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	16.《浑身解数》	">	16.《浑身解数》	</li>
+<li value="	http://vv.taozhi.cn/088de1a37c60462c8655f19f7d37c9c5/f545ff4992474521b5b6322f921a88c7-6aa919c81b5e4782647cac763294d5be-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	17.《了如指掌》	">	17.《了如指掌》	</li>
+<li value="	http://vv.taozhi.cn/35f209e638ac4aa98a5d7ad4f9ae171a/461cfed92ce74b8db7c7eb6df1208781-ab9762e0fb4f6ced73bcc08c373692db-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	18.《神机妙算》	">	18.《神机妙算》	</li>
+<li value="	http://vv.taozhi.cn/0ebdab00aa7c4865a8d5782716e8c9c6/9996dd07dc484878afbe7e9b178ec59c-54cc909f82c6fc98e66f8b576628cd14-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	19.《义结金兰》	">	19.《义结金兰》	</li>
+<li value="	http://vv.taozhi.cn/59e604fd46374a5a870f6ee36d00c3cb/d37261bc172548e088aa5e3fcbdf11c3-30ce580bf156a7c03604bc8b792f5f0c-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	20.《笑口常开》	">	20.《笑口常开》	</li>
+<li value="	http://vv.taozhi.cn/4888ad4627104e03aa33843567388d5a/a80c8fe21b464e7497ce0f0b6bf81ef8-8e9ed59e949d8b68719530ba55d0ca43-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	21.《贪得无厌》	">	21.《贪得无厌》	</li>
+<li value="	http://vv.taozhi.cn/b5a2cfa79c78437a8742b2809c1e45cc/e9380d85a5a84423aacc874e4002f180-bd31c67bb207da89c6b0b8ec439b5da1-ld.mp4	" title="	小学	一年级	语文	看西游，学成语	22.《功德圆满》	">	22.《功德圆满》	</li>
+<li value="	http://vv.taozhi.cn/a98c881e8a90415c90e2b6fcd25e273a/648eebbe2f374edc809eff6624be28d8-c14435fb46d3010e1e7e17af55d4d428-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	1.《开天辟地》	">	1.《开天辟地》	</li>
+<li value="	http://vv.taozhi.cn/9fd1605c6f684aa3bb2944c040172a47/d0f19cfa1f744d12bb64aef9bd530a65-ec8e02d07c5d0eaf55333892a3db9db9-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	2.《挺身而出》	">	2.《挺身而出》	</li>
+<li value="	http://vv.taozhi.cn/5b46d25fa87a4133beb4001da7c9be63/0ac828da5fae4d4090e8f3ec55ba030b-d1bf3a7fc6326e2fd3e8be43004b752e-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	3.《天崩地裂》	">	3.《天崩地裂》	</li>
+<li value="	http://vv.taozhi.cn/3030b566b1f64708937e653f156dd92d/807fedabf36e4195b88c0c40219ce02e-2bae68d09892c58e6812fc70552a274f-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	4.《望洋兴叹》	">	4.《望洋兴叹》	</li>
+<li value="	http://vv.taozhi.cn/8aba630c1652455da17a7df2cf34b11b/dc29ad7b1e3d4293aecbb0bc7309385c-58729ebb2288de65f11a67c2cfbb7168-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	5.《八仙过海各显神通》	">	5.《八仙过海各显神通》	</li>
+<li value="	http://vv.taozhi.cn/22c5d7a4fb9d4ccdb651e8d10b9baee9/fc6770ecb732415686f2005a9fcc760a-2b4cfdebf026d3a6fb2f52223204b3a4-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	6.《点石成金》	">	6.《点石成金》	</li>
+<li value="	http://vv.taozhi.cn/7c402d655e9c45dab025c03da9f5b232/86672799ed4140fd9542a2d242dd5eb4-c63541adefe35abc2c271f3240fede1b-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	7.《天衣无缝》	">	7.《天衣无缝》	</li>
+<li value="	http://vv.taozhi.cn/db094467380e499fa0efb8d188dc5122/01293118e9c14ba1bd7391084a04a8c7-fc4ba59efe9f848ac44705255ec7a8bd-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	8.《奋不顾身》	">	8.《奋不顾身》	</li>
+<li value="	http://vv.taozhi.cn/3644c1e6e6be43678e43b76d9ebb92dc/80e3894d63f44c78b975db4f9ffabefd-df16d4453d27ea2329993435f28b6624-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	9.《精卫填海》	">	9.《精卫填海》	</li>
+<li value="	http://vv.taozhi.cn/9c660865e2964fc5a564dfcaede9f43c/181c6c7096b44f52a86aa2120c084fae-918feab01fd0f1bfdda3cf26022f1854-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	10.《菩萨心肠》	">	10.《菩萨心肠》	</li>
+<li value="	http://vv.taozhi.cn/f8d73ca91d5d4540909c05c2fad92f39/68481c7737f04b1088d8c6a1b41b67b7-04567687faae5b3ba269cc0b1bc92100-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	11.《见义勇为》	">	11.《见义勇为》	</li>
+<li value="	http://vv.taozhi.cn/25721bf011d84d719039752fc7f640cf/56671c9a72654a6e8b1b8606326b6fe7-0c69b463a83dab437cb6c7889990c944-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	12.《沧海桑田》	">	12.《沧海桑田》	</li>
+<li value="	http://vv.taozhi.cn/21c0bfb332f74dd49a201448272936a3/63bd79b7c13c40ffa825df97290ef3d3-666525ebeca173b2d90b7ccfe74da10b-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	13.《翻江倒海》	">	13.《翻江倒海》	</li>
+<li value="	http://vv.taozhi.cn/2e59f16b87184c8bb4bc7ed2e695401a/33f00bc24a5d4a679890e50d7f1a15c0-5141235bf1b91e4d5c110fa697e7ceb1-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	14.《叶公好龙》	">	14.《叶公好龙》	</li>
+<li value="	http://vv.taozhi.cn/35a3b265e11344e2b6938be2aa5dc091/d77fa0d1c24a421c852ed274e858671a-f9eb4f2599cf7edb75d538ed8719ff69-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	15.《百鸟朝凤》	">	15.《百鸟朝凤》	</li>
+<li value="	http://vv.taozhi.cn/c91b223bdd51408b92b2a956f82221f2/7d1631c1ea924553b3d8eb666d21bfc9-31ed98786c00728674627dbbcdc000b4-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	16.《凤凰涅槃》	">	16.《凤凰涅槃》	</li>
+<li value="	http://vv.taozhi.cn/827867c2a64c4dc998b38c6287659ffe/d951264cd6c943fd982e0b59cfda652e-9ded4fd5fe2c6279d00ac33899ac7de4-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	17.《巴蛇吞象》	">	17.《巴蛇吞象》	</li>
+<li value="	http://vv.taozhi.cn/58f5b3663efb45f38682f2c32d7f5b59/44a0f94ae97148e8a5cfbfbb24401f03-d6b854abe3cdfd6351a134c88437d9d2-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	18.《含沙射影》	">	18.《含沙射影》	</li>
+<li value="	http://vv.taozhi.cn/6ecb0cc08bd74631b76fa733a34dd513/7bec3ac4322a41089378c524f76b0de9-aab290776db352f95f0d8c084a32e1b0-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	19.《夸父逐日》	">	19.《夸父逐日》	</li>
+<li value="	http://vv.taozhi.cn/56c04b10edc14fd0a3f227b6af76bc4d/1cb1f84f10194a4c90699ce693029450-7aedcf08c86ea5d11dfb5885b7d33a47-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	20.《攻无不克》	">	20.《攻无不克》	</li>
+<li value="	http://vv.taozhi.cn/a5242147e3bd4dbc8b11a842097deadd/68b3c3da0edb4211b2c0a7c5ea614abb-8972d88aa215f0d5751b139a92802ba9-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	21.《猛志常在》	">	21.《猛志常在》	</li>
+<li value="	http://vv.taozhi.cn/b88de0d89e214b17b62482e5863c7f20/569595ed361743828cc3d378f82286d5-312ceafda4826a7bba3cbbaf9e212b39-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	22.《化干戈为玉帛》	">	22.《化干戈为玉帛》	</li>
+<li value="	http://vv.taozhi.cn/93808b3a92fc4977874d051b9ef6308e/17312da3528e447ba0a66e1ef5b98d90-ef1dba1f2b012c0a90c5bbe08572a758-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	23.《过门不入》	">	23.《过门不入》	</li>
+<li value="	http://vv.taozhi.cn/54939b1ba2b247c29019f803f6fe5191/6819168fd9b3471782e9b16720123f52-7b073ba36f804913c5832559546586ad-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	24.《杜鹃啼血》	">	24.《杜鹃啼血》	</li>
+<li value="	http://vv.taozhi.cn/498f8a1cce6b44a289b6a985c41c3898/f4958547b59f44c184115f65df3c00c7-5deb4f5010051dc0e51b9824a3ae83b0-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	25.《天长地久》	">	25.《天长地久》	</li>
+<li value="	http://vv.taozhi.cn/9f1cc9698c714a86bc64f26f562bd1c8/53618057e47b41f8b2d94b2d5c611a04-94270292231ab2c22471b3b2acaf017c-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	26.《怦然心动》	">	26.《怦然心动》	</li>
+<li value="	http://vv.taozhi.cn/0f7d8ee7299849248be143499c902c6e/701fd0c6c3de486da7b26abee2393631-f88fc08f2a68b2132b823595423c1e51-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	27.《一见钟情》	">	27.《一见钟情》	</li>
+<li value="	http://vv.taozhi.cn/2b5cb2ad33fc4306a3cdb8c7d497755a/1171d1ffbb71498aa2e44212cf316da1-d26dfc879d35ba2ee06d0290ff7fe2db-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	28.《起死回生》	">	28.《起死回生》	</li>
+<li value="	http://vv.taozhi.cn/a5b6a62ca5264c708275d9473429f24a/cb0dcb8cd02342e4b4cdc0bf4d674b4d-b47c6870a2b254c4dfc695d27ada5a18-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	29.《比翼双飞》	">	29.《比翼双飞》	</li>
+<li value="	http://vv.taozhi.cn/1a49e39ac2b94ab6a90323d3966c7b0e/97f28374c64042fb9a0cdec0eafb989b-5e3a707be3c66e04fd70ebc14eab749d-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	30.《白头偕老》	">	30.《白头偕老》	</li>
+<li value="	http://vv.taozhi.cn/0bced5ed70d14cca8ef9325138feee86/eb304af1a4fe48c2afd30a75751b0aac-ae3ba08829fae296aec8e40b6f556266-ld.mp4	" title="	小学	一年级	语文	看神话，学成语	31.《痛不欲生》	">	31.《痛不欲生》	</li>
+<li value="	http://vv.taozhi.cn/b7257897a1274ed2bf97554d2c027aef/a4bcfcb7481742dd98897b302968c063-4824dd54985d800da7017adaea4985d2-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	1.《红颜祸水》	">	1.《红颜祸水》	</li>
+<li value="	http://vv.taozhi.cn/384f199f3c3c478f953f1fb9cd0b752e/3a660e0ba0964fbd8eb47b7cc7aeaf71-3508a79437a6b151c0a24d6796652077-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	2.《酒池肉林》	">	2.《酒池肉林》	</li>
+<li value="	http://vv.taozhi.cn/d80aba8e45964dff9ed77fdadbea3c8f/8cc9be674c0a49c9b62f6bd56bdc6952-14807dbb7cb23e2ccb98bbf0e8eaca86-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	3.《恶贯满盈》	">	3.《恶贯满盈》	</li>
+<li value="	http://vv.taozhi.cn/8cf8d8ddd6624227b57798376b1d6ae0/7b8c4801695249c3beafde3b6fce00f7-491e97f1fb82e41bb9aa423d35f26dff-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	4.《一窍不通》	">	4.《一窍不通》	</li>
+<li value="	http://vv.taozhi.cn/ea80f9eca4ea461cbe42739bd764de2e/e75f1328abc2455f8e6db2ceadf45d57-26e57d3c94379567d920e149b4eb4dbc-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	5.《势不两立》	">	5.《势不两立》	</li>
+<li value="	http://vv.taozhi.cn/69338cc7c03d4e01be96f851bdc7d0f3/8e3db3e947724ca8984b83cf1782a17a-c4f8c9177cf1cc12bd316c646630f927-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	6.《出口伤人》	">	6.《出口伤人》	</li>
+<li value="	http://vv.taozhi.cn/e3a9694c2ccb49fab9ff196b3cd890ac/94c789f15ae14589a0b2b0a37ac2e67d-c38ed0ddd2db56b982017872b75e87ea-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	7.《搬弄是非》	">	7.《搬弄是非》	</li>
+<li value="	http://vv.taozhi.cn/36c8f251963a467b8120b414ccffe8c1/74442f94ef964149afce92138c88d366-7a6db629ce8f795db0226849839f7c34-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	8.《五光十色》	">	8.《五光十色》	</li>
+<li value="	http://vv.taozhi.cn/bb1d3094b8c44edf8cd8ef3b9913b4fb/af623624ce3547ab918f778cc79377a6-60184e1c2f462c04e4b052a9d3084f91-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	9.《缘木求鱼》	">	9.《缘木求鱼》	</li>
+<li value="	http://vv.taozhi.cn/cb4ae01b487746e6b62b845d3c1c1310/8c7c63122de447869b72e8bb13135c35-d514415ed0b9f8098f0c1b7152d4a597-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	10.《太公钓鱼愿者上钩》	">	10.《太公钓鱼愿者上钩》	</li>
+<li value="	http://vv.taozhi.cn/ee947701563241cc82b1efec54071da1/d563664f5f5242218411cb2faea756e8-0ba7789951597a5e1dddbef104fe73f1-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	11.《大器晚成》	">	11.《大器晚成》	</li>
+<li value="	http://vv.taozhi.cn/dfe770c2ab1343b1a54e3f30e0318c8a/68f71bf784e843849465b2e568b579f7-17da63ec752b522b13c7a97d2b7cb2e2-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	12.《画地为牢》	">	12.《画地为牢》	</li>
+<li value="	http://vv.taozhi.cn/e76614a89f754540a6ab97cce50325ed/490650c644ee442eb0fd601fbd1d2e15-754c25a0ae4f5edffda3a92c851359c5-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	13.《三头六臂》	">	13.《三头六臂》	</li>
+<li value="	http://vv.taozhi.cn/c26f879296e64b8cacdfa855353c3199/7a4e279505934ebabe6cbb707a1a152f-bae5585833bb5b18ce2fdc102c39a2a9-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	14.《神出鬼没》	">	14.《神出鬼没》	</li>
+<li value="	http://vv.taozhi.cn/2d7236be4d5648f2ad19c780a981677b/02a2014f78e64645a6178ad7845d80fc-fdaa7076af4db4801faeb1b2cf5a8801-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	15.《力挽狂澜》	">	15.《力挽狂澜》	</li>
+<li value="	http://vv.taozhi.cn/49e9524cb01e4d66822489d483069efa/462ed902e4f14d178b471a1fbcf6d9ab-dd8b79b5d2d4f6764f51fa7a580b40d5-ld.mp4	" title="	小学	一年级	语文	看封神，学成语	16.《爱屋及乌》	">	16.《爱屋及乌》	</li>
+<li value="	http://vv.taozhi.cn/9bdd822f6d25477aaab44c741b9702c5/2b7fdc62bfd64e1798bf713e6ff72fd0-176f4992fa101085eaf7ea1237314211-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第1集：腊八节，喝腊八粥	">	第1集：腊八节，喝腊八粥	</li>
+<li value="	http://vv.taozhi.cn/914b3eedb2f948a498c73592fee52dfd/d320e7dc82e04b5ba86ad5923637ba4e-993e84c6c5b6b919dad9d1de0e9638a5-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第2集，二十三、糖瓜粘	">	第2集，二十三、糖瓜粘	</li>
+<li value="	http://vv.taozhi.cn/ae762f59d7244f61b020350051b6e32c/3cc3832119ac45d0bf8866d2e8eb51f8-52dc25fc445ec5142eb0d1647bcf6ee0-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第3集：二十四，扫房子	">	第3集：二十四，扫房子	</li>
+<li value="	http://vv.taozhi.cn/aa1e7165968447e9ad986187178a410d/8877b1d2ae894369ba699357e5e27700-ec3dd7a8c30dd1f399bbd739bfa5d621-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第4集：二十五，磨豆腐	">	第4集：二十五，磨豆腐	</li>
+<li value="	http://vv.taozhi.cn/304c4ec0348a48f3b5ee8f1426639ab7/a87c82615e6246698d43b18d73dd301b-db9ed11f55db1a95e0f5a9989cb4c4b4-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第5集：二十六，割年肉	">	第5集：二十六，割年肉	</li>
+<li value="	http://vv.taozhi.cn/b2e2968c58b14bb0947ae6a4db80bb1a/1647d14332c2409cbb116621872a6239-afbcc38b2a21e54906fe66a1a398930d-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第6集：二十七，宰公鸡	">	第6集：二十七，宰公鸡	</li>
+<li value="	http://vv.taozhi.cn/7da39dc482c84ec6a6ff9911a64d92b6/a1bae186aa0e469bb637c7b53fcec4b8-d6e67ab6b4b3900974d6ac6bd8480e2b-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第7集：二十八，洗邋遢，贴花花	">	第7集：二十八，洗邋遢，贴花花	</li>
+<li value="	http://vv.taozhi.cn/78c64d3ac073444086a6c48c5ebf4d84/172a70b220624f829d5d78802c2eef7c-71bbd8fe178c53e42ec06e1f31b4870d-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第8集：二十九，蒸馒头	">	第8集：二十九，蒸馒头	</li>
+<li value="	http://vv.taozhi.cn/7e2ea536e7344233b2299fbd7a14eba9/b4021d8a69e947199d85b93eb76e5566-a335a3e7a6ce01477acd112c1cd35529-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第9集：三十晚上熬一宿	">	第9集：三十晚上熬一宿	</li>
+<li value="	http://vv.taozhi.cn/ea6521171f2845f187521aa95efe35ea/53dd3f30792742139a29f7e42b2b290a-ed789976bd0ae6042f7561f994240e87-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第10集：大年初一，扭一扭	">	第10集：大年初一，扭一扭	</li>
+<li value="	http://vv.taozhi.cn/5a91b9d08d464c2b9d5964e93528e6f9/540248d413f24080bdc1f06c27dfd5a8-564e25f1eabdfc66eadb0ed2eb050398-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第11集：大年初二，回娘家	">	第11集：大年初二，回娘家	</li>
+<li value="	http://vv.taozhi.cn/82f17db578b044c6a4cf239b3b68696c/1f0dc3cfde2341dfbd9a9991e055895d-c74d953d7becbc9ff52a35c92e93b002-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第12集：大年初三，睡到饱	">	第12集：大年初三，睡到饱	</li>
+<li value="	http://vv.taozhi.cn/6c66acb6f4a64e989a3c3f460dbf1421/dfc6c510ff6a46e89ad69dad3e281e91-45e2e01c6140a2f009b6ec9efd250af7-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第13集：大年初四，三羊开泰	">	第13集：大年初四，三羊开泰	</li>
+<li value="	http://vv.taozhi.cn/95d6c64a2b46458b81b4565e6209fee0/d7dc26f8cb4a4b79b7ee7213cc733889-2f272e0b6bd829eac0e0f4782c04545c-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第14集：大年初五，接财神	">	第14集：大年初五，接财神	</li>
+<li value="	http://vv.taozhi.cn/fcc7bfd4a93542b5b3c5ac97324d184d/cde84ff555c54d4db873afceba48c857-3e04aceb1891747de7b79d125867cadc-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第15集：大年初六，送穷神	">	第15集：大年初六，送穷神	</li>
+<li value="	http://vv.taozhi.cn/621da8765c774c77877f515c6a5916f7/8881aef9afbd4971a0e1690aff2354e7-0b5c1c5d1c2ad18a0966e4ff484599e3-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第16集：大年初七，人日节	">	第16集：大年初七，人日节	</li>
+<li value="	http://vv.taozhi.cn/13910f02d47542459f61ea2b85dd7b3b/042c7dc88b844a2dbc0c54c121fd6a06-2c090a3205fc25f7e7747f9d90c49c7a-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第17集，大年初八，谷日节	">	第17集，大年初八，谷日节	</li>
+<li value="	http://vv.taozhi.cn/c8fc99fc702b4a53a01dd69161fd35fb/f1d13cce39d8477c990a024a4c5f6088-56fd7341d8b9fe2a71f4b34efec22063-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第18集：大年初九，天公生	">	第18集：大年初九，天公生	</li>
+<li value="	http://vv.taozhi.cn/b7b0039b1a1e440d93b26e8656576ca0/0f742ee1ea4c481789c6b82992f27249-56006c3f1df23e6727d7eff657bf6e29-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第19集：大年初十，石头节	">	第19集：大年初十，石头节	</li>
+<li value="	http://vv.taozhi.cn/4121101b8b394819820e37babfcbdedb/642b1cddc6c043d8818d3ae4b801933c-37107e6a0bae0617aadb629af410f561-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第20集：正月十一，请子婿	">	第20集：正月十一，请子婿	</li>
+<li value="	http://vv.taozhi.cn/f8b45c8120a04d878915c018a26c325a/9b0e3a2f84354957b6caeda44877b76c-f7fb7543be136a8798d142014c033678-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第21集：正月十二，搭灯棚	">	第21集：正月十二，搭灯棚	</li>
+<li value="	http://vv.taozhi.cn/4bf4356f6f47447f82b294b0e819e9b3/92372b37d2ce411cb0fe049a1ec68d6f-59f94bd86ba3fe0636b9560e9668a41b-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第22集：正月十三，灯头生日	">	第22集：正月十三，灯头生日	</li>
+<li value="	http://vv.taozhi.cn/59f135b1280844179e43dcc828249314/be897030071242f68a2f5d6f5ef25e99-b347e6acc49f7c387326194258b5960c-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第23集：正月十四，拜临水娘娘	">	第23集：正月十四，拜临水娘娘	</li>
+<li value="	http://vv.taozhi.cn/2a0629b4c3e24371bc44df06522e7eec/4b30bbee79a34d22beb85517c5719608-28a95a4a3017a33d93ea4e598b46a273-ld.mp4	" title="	小学	一年级	语文	藏在年俗里的故事	第24集：正月十五，闹元宵	">	第24集：正月十五，闹元宵	</li>
+<li value="	http://vv.taozhi.cn/23f32d94e79b45a3b741f1cbf95d0d45/e2b1f2c9a0ca45b19a59e230d9b043b4-f02ccda9fdb9078ff0ef89fad6e85fc0-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	01丨冬天真好玩 	">	01丨冬天真好玩 	</li>
+<li value="	http://vv.taozhi.cn/15383b37de4046cdad11c0073ab19eca/d571c122b79143c98b79dd9a885ee53a-764b4e58b8a0094f4db8a1ee121ca1ae-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	02丨小猴子和大猩猩	">	02丨小猴子和大猩猩	</li>
+<li value="	http://vv.taozhi.cn/db9b0efa1b334da0a7e085d4677bd0b5/2d43ec0d9df045e5903c06a20eed2227-b6da60fa2d7e4fbb6bf0e49688aae190-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	03丨海底世界	">	03丨海底世界	</li>
+<li value="	http://vv.taozhi.cn/b5c5f389e2544520a7f2abe2cd0b645e/675ccd2b3aed453c902a3f0985f9eda4-d6179d916fcb154e6a3280c130b0b6f8-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	04丨找同类	">	04丨找同类	</li>
+<li value="	http://vv.taozhi.cn/5fa0f94596114d5c95e61b4b66c4ae4c/062c837a35cc4508a8c5dec9e11cffdc-ad8903c68dc96ca7a66a850a35d26d15-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	05丨小猪吃西瓜	">	05丨小猪吃西瓜	</li>
+<li value="	http://vv.taozhi.cn/ea2b9294cc6347de871e629ffe630a75/d8c651fa5ce04f8cac57a2f6edfded8c-a5a2bd71199bb17f0953186ee8ddf02a-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	06丨小手工	">	06丨小手工	</li>
+<li value="	http://vv.taozhi.cn/94786137c47d43589d6435cd8b92ca8a/7b01350e200f44589ce3ddd700f96587-3ca60079ce6d6d80a523eb1947dba82d-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	07丨小猫咪	">	07丨小猫咪	</li>
+<li value="	http://vv.taozhi.cn/1769a7b96d4b466d85f53c3f7bc5a6fa/5455c7b088d64bf8962efb9794d47823-133d1441563aca3efa6f60969f190920-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	08丨海边奇遇记	">	08丨海边奇遇记	</li>
+<li value="	http://vv.taozhi.cn/62a2daa2c1e143d5850ffdf260ea82aa/b6f4ad5226de4c5983aa374e9e52c71d-482194ba2318d405c0bbc42c7cd2de55-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	09丨跳绳	">	09丨跳绳	</li>
+<li value="	http://vv.taozhi.cn/0607bc82ae1f4f0cbf7e2ae5fa0ee249/49e65a97cbee42bd87ffbb3e204ec05d-6e0fcb99c6e1abc5f9c6b3ac069b71d3-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	10丨存钱	">	10丨存钱	</li>
+<li value="	http://vv.taozhi.cn/c53415fb9091465b8dc4288a0b20f9b2/23d3c3b4e1224001879eb97d5915f844-d41a4f275ed1530112438584412d4ce1-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	11丨浇花	">	11丨浇花	</li>
+<li value="	http://vv.taozhi.cn/1e31b2012a1d4fc282c655c47e286192/6e663822820d47748f3c4ca505fcf59d-73cef8dbd454d230fa044e345becf4d4-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	12丨过马路要小心	">	12丨过马路要小心	</li>
+<li value="	http://vv.taozhi.cn/61a86ca5cf5d45de851d6e4d0d59fdec/27cb225031ad4444b49ab1c466a55ceb-9e21649bfcbf8e6a9ccf4ff875fbbfdf-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	13丨抓萤火虫	">	13丨抓萤火虫	</li>
+<li value="	http://vv.taozhi.cn/1b2938691bff40e58233dfba5ebdd548/cd19744253264496bce24d1c8ddf9d74-61b2258843f3a21fe387fc430d886152-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	14丨学溜冰	">	14丨学溜冰	</li>
+<li value="	http://vv.taozhi.cn/1f232decbb254ca7b82ddb9976452ee2/f5dd100221624b558e14a2066669c4c0-0e33a4d52d43d6ab9c4c5dc5a075e2ab-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	15丨故事衔接	">	15丨故事衔接	</li>
+<li value="	http://vv.taozhi.cn/fa5377eda0c740a380f5ef1448f41d46/cd0264be256d497aaf6c644ac62f5b75-5e142f1b09c155bc8d3ceeef29de8702-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	16丨故事新编	">	16丨故事新编	</li>
+<li value="	http://vv.taozhi.cn/8ff940cc46114b88905c36ab52f526f3/fa48f2f93fd24675a58c8a49abbaee4a-5a50adede6defbab5624da9eb83c815b-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	17丨故事续编：猫和老鼠	">	17丨故事续编：猫和老鼠	</li>
+<li value="	http://vv.taozhi.cn/872a6265a4cd44e196b0de994db95ba0/2a59eda91cbd4f8ea67dbb1aeaa561dc-20f793190fcf4d4b5cb464e079a4b6c9-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	18丨现实想象：保姆机器人	">	18丨现实想象：保姆机器人	</li>
+<li value="	http://vv.taozhi.cn/6d38690c304b42f5853ca9116bf53813/fa5ee08ec04c41cc92c796f2ca60004a-e032bd4ec7e4f351b27c00d856ea0368-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	19丨大胆说话	">	19丨大胆说话	</li>
+<li value="	http://vv.taozhi.cn/7e380ca6d45b40cb927d6f14c23cad9c/013bc26cf1494bada15bd4df33fb5135-3aa691716d2895ce94edbef3984ef740-ld.mp4	" title="	小学	一年级	语文	看图说话——从开口到娴熟	20丨逗你学宝藏之看图说话宝典	">	20丨逗你学宝藏之看图说话宝典	</li>
+<li value="	http://vv.taozhi.cn/cedeaec3d204430c99fd356ef1d27d9d/f963cc1033664d66a82f7fd0643fe06a-46a682ef15f91ec35461ef44233d0666-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	26丨凭什么说他是神童	">	26丨凭什么说他是神童	</li>
+<li value="	http://vv.taozhi.cn/a95f07c297734239b3b1035eba796a70/ef678302afa340d8941773946afb8b75-f1eae8751e65320a2d0cf7e41ecc5e47-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	07丨游来游去的鱼和花木兰有什么共通之处呢？	">	07丨游来游去的鱼和花木兰有什么共通之处呢？	</li>
+<li value="	http://vv.taozhi.cn/0d6e3e6a78fd4a0a8ef2441d85ecb5eb/d5bfd930455e4875bfaab5f1c433c678-2bda6b5b2a886a25fe90f7020a8bc1ed-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	15丨神奇的风	">	15丨神奇的风	</li>
+<li value="	http://vv.taozhi.cn/ef4e37747c104a87b572fc15b0b4b246/7ac68c1e1f6f4f6384c4780a4f5b93e4-2b061b00a8a181355314cefab8d42114-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	02丨比细腻？这位女诗人更胜一筹	">	02丨比细腻？这位女诗人更胜一筹	</li>
+<li value="	http://vv.taozhi.cn/1c5867db25c94a7697c4d530c6e611e1/a599bc80f78d4cd0b6aad3864b2a3d46-c07772d4278902125be8e5cf455f6c48-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	12丨原来我们饿了上千年	">	12丨原来我们饿了上千年	</li>
+<li value="	http://vv.taozhi.cn/57d0335e42084e1085d85b72a40d93dd/b56e15e046054464bfd094379d634e3b-c9bb908959ef439799b92a04ae6b1586-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	22丨诗里面的乘兴而去扫兴而归	">	22丨诗里面的乘兴而去扫兴而归	</li>
+<li value="	http://vv.taozhi.cn/7a5347b111a0472e8ad4331710fd4ce2/39fc907f8ead463a928bf4420bc2c1be-ba532b52b2d98b6f41b0615475e24c83-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	08丨惊！为了美味此人竟愿意降职流放	">	08丨惊！为了美味此人竟愿意降职流放	</li>
+<li value="	http://vv.taozhi.cn/bc97aa93437d4e0d909aef79fd3c0118/7c1ea601621c4bfda3e44a231dbc5272-ccebfad6a2319ea64b7f2750e87fc0c4-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	24丨做首富的儿子可以有什么不一样的作为？	">	24丨做首富的儿子可以有什么不一样的作为？	</li>
+<li value="	http://vv.taozhi.cn/bd4fc135117342adae5c1328fd69ef71/838b60c27e044554b4815d2174830ce0-659d0a3b82fc5b6c1d0ebe2b22ca0e52-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	03丨1200多年来，中国父母对孩子的感情有什么变化？	">	03丨1200多年来，中国父母对孩子的感情有什么变化？	</li>
+<li value="	http://vv.taozhi.cn/93d8965b086044d39e931f7f44f40446/02ccb5e110a74da297b1a643a451cc24-672e0ffe5cf81382faca9af2d52646d7-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	11丨每条狗都有自己的一片天	">	11丨每条狗都有自己的一片天	</li>
+<li value="	http://vv.taozhi.cn/702e322c529e4070a898e966211b1430/e5ec948a51de4607a0a37c83888a9244-7d8bf71d05cd126a27fcb4cd0d380e60-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	01丨都是乱涂乱画，为什么结局差别那么大？	">	01丨都是乱涂乱画，为什么结局差别那么大？	</li>
+<li value="	http://vv.taozhi.cn/fb64ce7a00fa4a21ab195f9385dca3f4/b5d4178cf9fd41b78a4fa1b0a352d6be-34c4f057ce18348b97aab95b6d973b20-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	14丨有对比才有奇迹	">	14丨有对比才有奇迹	</li>
+<li value="	http://vv.taozhi.cn/8d3f528558c44b40b84a8080726ae1d5/4f9d873c0e9d46d1aaafaffc99d92423-ef0b93983de596f4f7a4e963a5b0774c-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	16丨中国文人的浩然正气从来没有变过	">	16丨中国文人的浩然正气从来没有变过	</li>
+<li value="	http://vv.taozhi.cn/435f0f94357e4cd79f4c700ff1a0a646/bdf5e81568aa46b79468d593a1b63159-3e4832b40df78cd9776cdc5b76516244-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	13丨如果有来生，你选择出生在什么家庭？	">	13丨如果有来生，你选择出生在什么家庭？	</li>
+<li value="	http://vv.taozhi.cn/b9e4e3297d6e4b63893f2a60fe1b7a3a/7d3594d2ef004a4a846b5ba0dbe918ed-644a6be626e5980b5d45f9cfcee4dfe5-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	10丨论气势李白也能输？	">	10丨论气势李白也能输？	</li>
+<li value="	http://vv.taozhi.cn/1bb0b0e1ac0345f3b8529c6516ea2c33/d9b55fba93394678aef8e3b3b829897b-32dfb11f69cf2f444ee001123f807342-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	06丨回归故土的异样心情	">	06丨回归故土的异样心情	</li>
+<li value="	http://vv.taozhi.cn/2fa342009e424d0a850c03b8b91c567c/3b001cf2fe69420c9a23c3c7cae2bc29-1699b4dbd4f99100ae2020e601be9398-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	09丨了不起的遗嘱	">	09丨了不起的遗嘱	</li>
+<li value="	http://vv.taozhi.cn/37300acdb86c40038871d613eebf3e78/d6979f71ee4c46b7add3c7c2a4e8701d-00eadd9f224824bc86731a4d07d5d2b9-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	21丨为什么文学家常常站在失败者的一边？	">	21丨为什么文学家常常站在失败者的一边？	</li>
+<li value="	http://vv.taozhi.cn/cb0b25bfee9849fa865fdbba068f2aa5/49df13bd2c8d4d9992afb8020836499b-dfa473639b46a5facf0df0d15f847d05-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	18丨送别到什么程度才能算结束？	">	18丨送别到什么程度才能算结束？	</li>
+<li value="	http://vv.taozhi.cn/2fbf54d0766e45cdafca37cacf8aed74/5b27a1efc195488194b1662363502605-b776c006ebdb22b2457fb6076459ad86-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	19丨生离很可能就是死别	">	19丨生离很可能就是死别	</li>
+<li value="	http://vv.taozhi.cn/ba8d907c7b6c4e768780b9b7abbf409d/b9e58b2f105940b4b248bbf62934a844-757b40301819bfafcb7851072885777a-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	20丨杜甫和燕子有何相似之处？	">	20丨杜甫和燕子有何相似之处？	</li>
+<li value="	http://vv.taozhi.cn/c957d7d4cdc34ee28399bad359e083c0/ced2bea0f29f444d95c49fde5191fbc8-d3cc3aff0dd55a581a91872b582a2b1b-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	28丨月亮惹你了	">	28丨月亮惹你了	</li>
+<li value="	http://vv.taozhi.cn/3edebaca6443402d89f9783ded6ad161/6a091df4f747487ead407e01b9357941-a413960dd5d88b1574037244d234834f-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	27丨诗词里的冷和酷	">	27丨诗词里的冷和酷	</li>
+<li value="	http://vv.taozhi.cn/81c32ab3913d49abb6705e8ed0872d27/41100022fb904b42a8c0960512fe8058-59d183a8809a3478d30b024d732f8e7c-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	23丨被送别的人也可以有一番作为	">	23丨被送别的人也可以有一番作为	</li>
+<li value="	http://vv.taozhi.cn/b624d83cebb042739bc276be91b209b6/380d2a05bd7641f99807db9c4241c014-2a1fa9754b877ecfc019ed57ef42ee76-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	25丨物是人非的感慨	">	25丨物是人非的感慨	</li>
+<li value="	http://vv.taozhi.cn/6388ad21cab0420fa927964ae107be55/a1a6b962fd86416ca47daeac401a43ed-89dd1fabb578548e9066f7a7f2792fd9-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	29丨好老师的一个标准	">	29丨好老师的一个标准	</li>
+<li value="	http://vv.taozhi.cn/496cc6c4476f4847bdc5b6437373aa0e/f6b471a9fd084950ac68e02a421c2eb3-fd236c8b00838abba9c4925d148a8169-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	04丨困扰了我们很久的“玉壶”和“冰心”	">	04丨困扰了我们很久的“玉壶”和“冰心”	</li>
+<li value="	http://vv.taozhi.cn/afd55974cc06482680a8487e0374904b/b4a7103263a24494af9a65b4154614fa-22163c7e8ed4856e6e0bc537a575930b-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	30丨送别诗之王者荣耀	">	30丨送别诗之王者荣耀	</li>
+<li value="	http://vv.taozhi.cn/744e8950dc904c1888092181bbc3f771/6c811e042fb7427e900c2ce87c56b32c-9575b83b7a4b4dcefcb57bfb9ded271b-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	17丨水往何处流的那些寓意	">	17丨水往何处流的那些寓意	</li>
+<li value="	http://vv.taozhi.cn/85cacd8d68d74f15b1f3ec839104fc43/c20ee4f7bf91467e97ea104666f5a9ab-275b75875da298a70ebb1150e48dcb12-ld.mp4	" title="	小学	一年级	语文	3分钟趣学古诗	05丨时隔千年的眺望	">	05丨时隔千年的眺望	</li>
+<li value="	http://vv.taozhi.cn/aa33e2da9f7f4e1b82415c4be692830e/d0b8626d16f14977b6d6f423c2ebf130-ef4201da6f14ff3b8bf1ddeef0113290-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	宣传片	">	宣传片	</li>
+<li value="	http://vv.taozhi.cn/cd2eb22ede81444b8fb45be61c92b58c/89a588e3c1be4a688c515d8cfd751bc2-074c11477f061d136cf79d57fa3574d0-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	1.【宫殿】帝王宫殿太豪华！超级建筑千里大“搬家”	">	1.【宫殿】帝王宫殿太豪华！超级建筑千里大“搬家”	</li>
+<li value="	http://vv.taozhi.cn/197e9cc41ca44ad7b1678abc322a8700/28717507b4d6435f87078346c8adf9a8-98498b07ec5d8720ee52865d8be7b06b-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	2.【防御】敌人来了我不怕！糯米城墙也能守卫家	">	2.【防御】敌人来了我不怕！糯米城墙也能守卫家	</li>
+<li value="	http://vv.taozhi.cn/cbb63e5695fd4803bbdffd9c94ee63de/efbd105ec14046dda8c55443f006dcb2-45f7dee66680da3c82695ee6270e4d05-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	3.【排水】古代排水黑科技！大禹治水讲道理	">	3.【排水】古代排水黑科技！大禹治水讲道理	</li>
+<li value="	http://vv.taozhi.cn/7e7e0c192e264faea517eb52eebc9d88/4e0edcc600174e1aa8a2c7b0c726b6ed-70b0624fc324e18d681f152379f07a5c-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	4.【园林】古代园林超精巧！亭桥长廊，漫步颐和园	">	4.【园林】古代园林超精巧！亭桥长廊，漫步颐和园	</li>
+<li value="	http://vv.taozhi.cn/87a5723b7a104b1882b50f087a081765/449475dcfc8b4a12a5c3cc989998bfac-b7e00271090fdb89c35df5427e0f6539-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	5.【装饰】精美装饰护家宅，威武神龙，帝王专用萌兽	">	5.【装饰】精美装饰护家宅，威武神龙，帝王专用萌兽	</li>
+<li value="	http://vv.taozhi.cn/35b6bb3c94874c77bb9b163b4c059691/0abea7bf70234d48bd5ad0e8439645b3-b38f126a06827c176f7b8f57278f9a77-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	6.【民居】京城百姓四合院，穷苦人家挖洞住？才不是	">	6.【民居】京城百姓四合院，穷苦人家挖洞住？才不是	</li>
+<li value="	http://vv.taozhi.cn/fc7696ba74e547f3b6d57b2df015fe6b/806fee20e0cb4905a13043e5eda99ee2-c0bafa7e67ceef1f7e65f7c6a0e8fcb5-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	7.【宗教】从佛堂到武当山，玄机暗藏，宗教建筑别小瞧	">	7.【宗教】从佛堂到武当山，玄机暗藏，宗教建筑别小瞧	</li>
+<li value="	http://vv.taozhi.cn/a47abade591e4ba3bb82e198341f0de7/9f3297603c094491b08575476cca299d-f6359fd94a45a3c6ad9508eb2412aacb-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	8.【学堂】学习是件大事情！来看看古人理想的读书场所	">	8.【学堂】学习是件大事情！来看看古人理想的读书场所	</li>
+<li value="	http://vv.taozhi.cn/74c73ce1511f42b2b81e51061fd0c24e/c3ed681012374d439fc29f1b7521717f-7482218d6a133ae76823bb1a0ba02c95-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	9.【娱乐】百年前的立体影院！看大戏，回味好声音	">	9.【娱乐】百年前的立体影院！看大戏，回味好声音	</li>
+<li value="	http://vv.taozhi.cn/0e39f99cd22f4fc38dcf4b7c0326107e/b7ceb437084a469d90e7fa8a54fbfb88-325d770b701fd2391359409dafc101e7-ld.mp4	" title="	小学	一年级	语文	了不起的中国建筑	10、［礼制］从太庙到天坛，礼乐祭祀，常怀感恩	">	10、［礼制］从太庙到天坛，礼乐祭祀，常怀感恩	</li>
+<li value="	http://vv.taozhi.cn/4a0c35d4d690423ab3eba793d88ed8d6/a524097ccb0941e9b18b9511f4892045-d1b2c34e85a65339683b48af22f8c827-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	识字1　春夏秋冬	">	识字1　春夏秋冬	</li>
+<li value="	http://vv.taozhi.cn/a4de912394994f7c9f80ba02ce915d92/be733e1aba124e3fbd6b88cc8584fe79-4fc65f9744206e4d6f3fc13d6d2a758d-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	识字2　姓氏歌	">	识字2　姓氏歌	</li>
+<li value="	http://vv.taozhi.cn/2de0a8b2a69f4893bbd6ae73bbf50693/0025ac652b98441dbdd1e35be5be465d-39705b881a9c746079a5eb6e66fa7984-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	识字3　小青蛙	">	识字3　小青蛙	</li>
+<li value="	http://vv.taozhi.cn/cee02fcf21254d26984289c0cd7b2e94/cf1a28ee7274401ab8f081e152fa57d9-a8825f607abd2f01ba275573a7110e74-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	识字4　猜字谜	">	识字4　猜字谜	</li>
+<li value="	http://vv.taozhi.cn/308381d754424c4f8ba4c61e91a066d5/cd8ee29a26ad490c8b547b2ee08affb5-67f06cf1ea92181835e73d01edb9231e-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	1　吃水不忘挖井人	">	1　吃水不忘挖井人	</li>
+<li value="	http://v.taozhi.cn/01621a75fb6a48af85075f34ca1fef60/096cfe1f1fd74bf6a9c772387c4752ab-5d13d3f3ae532d4027e42580f7a34a86-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	2　我多想去看看	">	2　我多想去看看	</li>
+<li value="	http://vv.taozhi.cn/48f17755f9a84c30a35814845dc4007a/39607bf826b44df29e7cd250265e7d87-65170100064616ad826802a0ce00187f-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	3　一个接一个	">	3　一个接一个	</li>
+<li value="	http://v.taozhi.cn/2a47c9d52c314ffb9bfe77436bb9deaf/981c6dc4d9ab4425847d66c7b01603d2-335a3324f110842fb9369bd5321236b6-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	4　四个太阳	">	4　四个太阳	</li>
+<li value="	http://vv.taozhi.cn/dbb8c18dc03f4189b87f572d72e1e5f5/41e4c861710743a5b936b50d5e3d2137-0468e82cac49b0e213e56e0c5bbf1667-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	5　小公鸡和小鸭子	">	5　小公鸡和小鸭子	</li>
+<li value="	http://vv.taozhi.cn/30f64776cee44aac9e5671b1d2470c79/cb3788dc6d3a4edda5e0c5fa344ac77d-21f22d50e59cb224fa2ca88e62840794-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	6　树和喜鹊	">	6　树和喜鹊	</li>
+<li value="	http://v.taozhi.cn/ec6da4093cb44f80b0957290c8e0cf0e/601b4ec1e1414175aa89c8d8305eaedf-379490b8b4ad6dbe192a6ec4448c5c8d-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	8　静夜思	">	8　静夜思	</li>
+<li value="	http://vv.taozhi.cn/157acd37030d48ea98f0c440bd80c545/e69403f9199f4d87aa12c6de4f49fd07-e4c126cff6a7f78e4d03a85e3a6641c7-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	9　夜　色	">	9　夜　色	</li>
+<li value="	http://vv.taozhi.cn/aaedf90b6d644657b830a3a3b4c02aef/ce9322a4b5624e6fb2ddc3ef68436ab3-eea8588358dc7b9fab167846f0789cb2-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	10　端午粽	">	10　端午粽	</li>
+<li value="	http://vv.taozhi.cn/22240941d22746a499df0c4f0f9667f9/166608d861b5445b97a38f8c002fe03a-52635f1b747a5ea6f306e0596cfa1417-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	11　彩　虹	">	11　彩　虹	</li>
+<li value="	http://vv.taozhi.cn/963f2d712bd244f7b82ae8837bd3c77b/09c8c2ca771e426796480fdff2bfd289-c0945abfa68fea33650bd5a43efd6231-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	识字5　动物儿歌	">	识字5　动物儿歌	</li>
+<li value="	http://vv.taozhi.cn/1b62393988a94df2a6ce6040eae958f3/3e4ee1dc43054f52b514154220c7360e-ace242e588542a98f4593332b6310220-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	识字6　古对今	">	识字6　古对今	</li>
+<li value="	http://v.taozhi.cn/9851e89a33fd4878a76f40ec0221e50d/315729b7e46b48f8877e4d828c004bb2-bac233beb56153780cee895bded5247a-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	识字7　操场上	">	识字7　操场上	</li>
+<li value="	http://vv.taozhi.cn/d242990e64e0497289ac00baaa52376d/290b4dcdfde6476dabe751e7c4661845-bc9200c238254c8e0fd3cfbfe56f00b0-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	识字8　人之初	">	识字8　人之初	</li>
+<li value="	http://v.taozhi.cn/3b1ded2554384e019bf387092c37ba76/0fc8850e2c444d4ea0ecf38838514221-b4fb49e66692c9b2d7853fd5d3865fca-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	12-1《池上》（小娃撑小艇）	">	12-1《池上》（小娃撑小艇）	</li>
+<li value="	http://v.taozhi.cn/ce80048877c64655af0f85a75eb4b7a8/f30c90f6e26a46c3b38b96a70941df83-043056dc792ba5a17bd26b8db1dfda12-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	12-2《小池》（泉眼无声惜细流）	">	12-2《小池》（泉眼无声惜细流）	</li>
+<li value="	http://v.taozhi.cn/5a985c0e818c4ae0b4d4965e7be1bb03/7c2aa1590e7b4802a7faa69608170929-4688c97486e82cb0cbdcc79ec2eca932-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	13　荷叶圆圆	">	13　荷叶圆圆	</li>
+<li value="	http://v.taozhi.cn/4f8e51f67ad1497ca4682315522e986e/ee7a124c80214e33a911e635b2de3638-b0f66713d63adb6343a5345d0a5dadce-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	14　要下雨了	">	14　要下雨了	</li>
+<li value="	http://vv.taozhi.cn/591a80e5f3cc470d862cd4073d6e3c2e/01165cec5224498cb3e108d854004963-f845c42788285dfad6c83fb1ff40cf3a-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	15　文具的家	">	15　文具的家	</li>
+<li value="	http://v.taozhi.cn/213a7793b5874b17bf17b53253b0ca54/cf936b803bbc40ee8e09ce16a78617bd-16ded776096fda6e442654a4cf6b3129-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	16　一分钟	">	16　一分钟	</li>
+<li value="	http://vv.taozhi.cn/17909e06c5ed49c89e4ce027ca3205c9/91e1a31f67cd41419005ba759ab7364e-257f2e32aa8a17ef3acafe3ed1184348-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	17　动物王国开大会	">	17　动物王国开大会	</li>
+<li value="	http://vv.taozhi.cn/2495248ff1924bacbb64bf06393562d8/0307e41bad8942d78bab3921a0c29e89-fac1e5373a825e89a463809dd293cd8b-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	18　小猴子下山	">	18　小猴子下山	</li>
+<li value="	http://v.taozhi.cn/af1e88b4523344bd8b3ac72a55236d8a/9034d1d83950466e817d0665592f4e70-588af995492fec594af0963a02f5bc7c-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	19　棉花姑娘	">	19　棉花姑娘	</li>
+<li value="	http://vv.taozhi.cn/8c57e867af6848c3857e6a21eec33bcc/ebb11e9a713b4720ad762e42e16c1e54-b466bca689c26f24da4f533004914390-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	20　咕　咚	">	20　咕　咚	</li>
+<li value="	http://v.taozhi.cn/b5ea754b0ec94ce7b4da9347f27df776/ce7eb53d2c944702985799b6d258afe5-78812aab4218e055134a028ac6abe096-ld.mp4	" title="	小学	一年级	语文	【看动漫学课文】一年级下（统编版）	21　小壁虎借尾巴	">	21　小壁虎借尾巴	</li>
+<li value="	http://vv.taozhi.cn/56cebe6e3d1a44e8be20a1c44ce2b9bc/207955a693824734917d60df98aaf8f2-07ca8690db81dc200fb4a9a62191a0d4-ld.mp4	" title="	小学	一年级	语文	词牌记事	宣传片	">	宣传片	</li>
+<li value="	http://vv.taozhi.cn/37b408ecc20042d0bfb1c2e4caa88e6b/d89c433f87c14c1f8f04a41d10a49a3c-aec0765f131425b3befbe0675495e656-ld.mp4	" title="	小学	一年级	语文	词牌记事	1.蝶恋花 	">	1.蝶恋花 	</li>
+<li value="	http://vv.taozhi.cn/7b21539a4d7d48438e6177a33ad429b2/1c3d4cbde3094ee0aef472fd1a3f6b70-2848b814d12fc3a0d8e304e23feb8f80-ld.mp4	" title="	小学	一年级	语文	词牌记事	2.满江红	">	2.满江红	</li>
+<li value="	http://vv.taozhi.cn/bcfc6dd3a42541fc82a340c1c2b34f6a/c00bd084b56840e7b444e04152d94d6c-78caa54e04356430e8101b9e378cf7ff-ld.mp4	" title="	小学	一年级	语文	词牌记事	3.虞美人	">	3.虞美人	</li>
+<li value="	http://vv.taozhi.cn/162cd6a1c0ad4dbf8e640873b9313b2d/5a8aaeaee1194f19a764f63bcf4e839e-0dc061c73ad1dff246d14bbaceb00b57-ld.mp4	" title="	小学	一年级	语文	词牌记事	4.沁园春	">	4.沁园春	</li>
+<li value="	http://vv.taozhi.cn/04496e353a054e16b29ee7c088135314/46e6646dbe8d47359c937d905da89bd7-4984825a9f0bbde11039e11cae390c1c-ld.mp4	" title="	小学	一年级	语文	词牌记事	5.念奴娇	">	5.念奴娇	</li>
+<li value="	http://vv.taozhi.cn/25b39ef76c2544e384a8b2c990a93e0f/3a9cc6c8a86646f8b3e329ced9682854-045141c62dedb36a81ecaf8f39ac036f-ld.mp4	" title="	小学	一年级	语文	词牌记事	6.菩萨蛮	">	6.菩萨蛮	</li>
+<li value="	http://vv.taozhi.cn/a197034478e243d89350e055e19494f6/817f56d1a1044ece800fb7a43a35121f-0094a145ce886943d77b8ed206ccc272-ld.mp4	" title="	小学	一年级	语文	三十六计	三十六计开篇宣传	">	三十六计开篇宣传	</li>
+<li value="	http://vv.taozhi.cn/e6e4fbbe3fbc4b3096d52358ae72803c/de620d63695f4bd798cc1b7301b9fa79-55002cb44ee3894c0d6c8ec3fc81dd15-ld.mp4	" title="	小学	一年级	语文	三十六计	1.瞒天过海	">	1.瞒天过海	</li>
+<li value="	http://vv.taozhi.cn/7c8003e07bd4498998394bf4dfed5046/b017b1443d124c5e862339bf99fcbd9a-f9fc9c6dd5ad3d78f749750ee4afe68d-ld.mp4	" title="	小学	一年级	语文	三十六计	2.围魏救赵	">	2.围魏救赵	</li>
+<li value="	http://vv.taozhi.cn/2bc93d4c95b248c787d7b0c025afd327/f1ab5c7cb4184bce96517c8fb13c00dc-aad007b04982ecb8b579af0b68b6f109-ld.mp4	" title="	小学	一年级	语文	三十六计	3.借刀杀人	">	3.借刀杀人	</li>
+<li value="	http://vv.taozhi.cn/9eff72e5ba264daaba77dd27d191e1dd/4e19aad12528433f985f07cd59805dd2-59f57b1fd18077c74a86bd16335dca74-ld.mp4	" title="	小学	一年级	语文	三十六计	4.以逸待劳	">	4.以逸待劳	</li>
+<li value="	http://vv.taozhi.cn/f2e002bfdd4e40d1aeab95ff97355f51/e09a46ac15ec4695b47ad9142564d6a8-b7a4cf1736cec048c9a64a35ee6a7a1c-ld.mp4	" title="	小学	一年级	语文	三十六计	5.趁火打劫	">	5.趁火打劫	</li>
+<li value="	http://vv.taozhi.cn/5422f2c577b24f169d4ea015aae85ac6/42528f8f08814be78997a6bf4925b084-007325080a964e16ecbc8e39bc3f0bb2-ld.mp4	" title="	小学	一年级	语文	三十六计	6.声东击西	">	6.声东击西	</li>
+<li value="	http://vv.taozhi.cn/f1b43b6930544099be799015e3229ef6/c67593afa0ba4ed0ad537f117579ec77-76ec19c905d6239944a5117a015c4a90-ld.mp4	" title="	小学	一年级	语文	三十六计	7.无中生有	">	7.无中生有	</li>
+<li value="	http://vv.taozhi.cn/690fdfe9758c431593cf0ef390d95c7f/11dc0d8508634d359b3e44dace99ac20-e177a53ae780ec76ac18d74683c94499-ld.mp4	" title="	小学	一年级	语文	三十六计	8.暗度陈仓	">	8.暗度陈仓	</li>
+<li value="	http://vv.taozhi.cn/de5a4dd7aace4cc4b54b42be6132eb6d/6be2d1b2aa054362ab78208af8ecfcd9-0d67436d8e52a0ae6b2d598ad766a998-ld.mp4	" title="	小学	一年级	语文	三十六计	9.隔岸观火	">	9.隔岸观火	</li>
+<li value="	http://vv.taozhi.cn/d2354525838f4f92b92c8f8f3b73fe65/5c91c36344924845b1efc0421cc9f8d5-31ee55c9da10019b28003831d9863057-ld.mp4	" title="	小学	一年级	语文	三十六计	10.笑里藏刀	">	10.笑里藏刀	</li>
+<li value="	http://vv.taozhi.cn/15ff83c8b19c4c24807daf9272fa102c/8712ceed7d9f43f1afd6e7d196b1b927-a943e1bc8a0f9282ea31cb3ac00ac6c9-ld.mp4	" title="	小学	一年级	语文	三十六计	11.李代桃僵	">	11.李代桃僵	</li>
+<li value="	http://vv.taozhi.cn/c2ab3b96d5d0472c82f743995380c741/d30b5ce162c043ddb5331d937f0871ed-59d02bb7a81fdbbde7efad652c4c1353-ld.mp4	" title="	小学	一年级	语文	三十六计	12.顺手牵羊	">	12.顺手牵羊	</li>
+<li value="	http://vv.taozhi.cn/770d873441f74bf2a9cd74e6192eb538/5732ae9c24f04bf882da0e5f1e7254e1-244a082acbe214c81b9e2dbf1a27d4c5-ld.mp4	" title="	小学	一年级	语文	三十六计	13.打草惊蛇	">	13.打草惊蛇	</li>
+<li value="	http://vv.taozhi.cn/82fa2cc78f2d48179631143c26d63984/7e4ae6a0f94c441e943a3c1034e67c74-79b7a0503c5d8a8f890807df5a146d07-ld.mp4	" title="	小学	一年级	语文	三十六计	14.借尸还魂	">	14.借尸还魂	</li>
+<li value="	http://vv.taozhi.cn/e35b2a70d2f2431d8a1af6dd7cb61020/275c4d26081943fcb263f5221497d536-c64ec2ce8f0b832bb2bc62b653c01ccb-ld.mp4	" title="	小学	一年级	语文	三十六计	15.调虎离山	">	15.调虎离山	</li>
+<li value="	http://vv.taozhi.cn/1e1d2838c08249bcb2c980bc574c7fc3/82157423f62a4d8ea80bcf109e47357f-d3df24697ceefd4f8aec2c738611c531-ld.mp4	" title="	小学	一年级	语文	三十六计	16.欲擒故纵	">	16.欲擒故纵	</li>
+<li value="	http://vv.taozhi.cn/31555aff74a045c3b17d551a11163594/4c7a35bc39e14be386cb41496c6d7dc1-016f1fc70d1008eb8323894e2523c561-ld.mp4	" title="	小学	一年级	语文	三十六计	17.抛砖引玉	">	17.抛砖引玉	</li>
+<li value="	http://vv.taozhi.cn/4759a355c9534c45a1ab1bbd22eb0f9d/47ec118a421d4f529ddc517182a88abb-6dfba32355d89b70d906087715e520b6-ld.mp4	" title="	小学	一年级	语文	三十六计	18.擒贼擒王	">	18.擒贼擒王	</li>
+<li value="	http://vv.taozhi.cn/b9d665bfedbf4adca23dce5b4289ae3d/e558bb9d67fc4479b18105d1507a39db-6b4af933c66bb80f16c264174c1da410-ld.mp4	" title="	小学	一年级	语文	三十六计	19.釜底抽薪	">	19.釜底抽薪	</li>
+<li value="	http://vv.taozhi.cn/6b72f3df38ec494b8501c65c24109e07/7cc338b47cbd49e0843e788c1e776fb8-1b6ee860f669938ea44c0fd4f6ae7631-ld.mp4	" title="	小学	一年级	语文	三十六计	20.混水摸鱼	">	20.混水摸鱼	</li>
+<li value="	http://vv.taozhi.cn/8eb97ba1138e4dd99570fe5c2d1eb6ce/e73ddddf0c1f44a9af385e2bb08abbb8-5cae49ad317701c0aa419fefc1f5d6a5-ld.mp4	" title="	小学	一年级	语文	三十六计	21.金蝉脱壳	">	21.金蝉脱壳	</li>
+<li value="	http://vv.taozhi.cn/9b3bd89c18e145aaa2be61f33dbdfdec/a2a0c14252504b0fb00ab07c09af21f1-6fbe499ba63891c132a00440ad8e96ec-ld.mp4	" title="	小学	一年级	语文	三十六计	22.关门捉贼	">	22.关门捉贼	</li>
+<li value="	http://vv.taozhi.cn/345a0fba87e74182b12926145ab6cb31/7c6108c6af934a49aed6ef2596a1011e-1206512ee4d003b5e096f9fe8751fca6-ld.mp4	" title="	小学	一年级	语文	三十六计	23.远交近攻	">	23.远交近攻	</li>
+<li value="	http://vv.taozhi.cn/599e10c7db5d40d8b3baa91805b95361/3872d58515a84653b7b2b1456c97270f-82ad5e6613b2234ada8c89a03c826aba-ld.mp4	" title="	小学	一年级	语文	三十六计	24.假道伐虢	">	24.假道伐虢	</li>
+<li value="	http://vv.taozhi.cn/e40941a012ba49f19fc237d38caa98a1/ebae2e6d97d5482fa583b900fcc07578-74b9cc7201094a02a74e8f1d3bb34935-ld.mp4	" title="	小学	一年级	语文	三十六计	25.偷梁换柱	">	25.偷梁换柱	</li>
+<li value="	http://vv.taozhi.cn/26ba92ee8c1447e499b590767645f9bc/678cffcee9c3405a9121df20b4e19513-eb915de1f3d127a4c4c0bb7972aa6b1e-ld.mp4	" title="	小学	一年级	语文	三十六计	26.指桑骂槐	">	26.指桑骂槐	</li>
+<li value="	http://vv.taozhi.cn/90686c2afbd049c5be07a0cd96459fa6/ba020f71bb95411182353b4ea7207f69-0339f529382681cc4791df87c533f968-ld.mp4	" title="	小学	一年级	语文	三十六计	27.假痴不癫	">	27.假痴不癫	</li>
+<li value="	http://vv.taozhi.cn/ff9b7cedb37a4de99277cd010350d1fd/2666f43287e244b5a8785543e94d452a-120bf52ca4931fc9c7758e2e66fef545-ld.mp4	" title="	小学	一年级	语文	三十六计	28.上屋抽梯	">	28.上屋抽梯	</li>
+<li value="	http://vv.taozhi.cn/ac0e988e785c405194080425ad593f30/b669a4b7153e432b913dd967716bd3a8-9e15e787bf64fbb1a8251c5551a3e080-ld.mp4	" title="	小学	一年级	语文	三十六计	29.树上开花	">	29.树上开花	</li>
+<li value="	http://vv.taozhi.cn/047c7acaa5e243f4953db71f0b565013/eee7a76bd3b1452188d0af74202c6282-2b4726fc11aa0cdf3aa84f009c6f2774-ld.mp4	" title="	小学	一年级	语文	三十六计	30.反客为主	">	30.反客为主	</li>
+<li value="	http://vv.taozhi.cn/50c3287354494cf6ada92d40788bb8ee/a1c86fe6172a4d44aad4ae7d87299f68-30d49fa7563837433621b893e0ddc1b6-ld.mp4	" title="	小学	一年级	语文	三十六计	31.美人计	">	31.美人计	</li>
+<li value="	http://vv.taozhi.cn/feb0372517374468b0cb7a435bd01f08/50d915b4d2a14720ab8a008b50b11c30-5718e4384be8cc205eecb9c04a0fb750-ld.mp4	" title="	小学	一年级	语文	三十六计	32.空城计	">	32.空城计	</li>
+<li value="	http://vv.taozhi.cn/5f134c50ec014375a5e0423863b0a2bb/ed6f95997e3a4ed6b28a24c5836f6733-eac5e793fefd92ab1ac33df17dec3784-ld.mp4	" title="	小学	一年级	语文	三十六计	33.反间计	">	33.反间计	</li>
+<li value="	http://vv.taozhi.cn/bd1d4470b1984829a952a203703c7e39/0058f377f15b4bc28a02ca35d979641f-012c0babd4552009efcd4ee9c0e6959c-ld.mp4	" title="	小学	一年级	语文	三十六计	34.苦肉计	">	34.苦肉计	</li>
+<li value="	http://vv.taozhi.cn/9a161f8b5e2b499c87eec97b2a818526/714187c07865434292a1eb76e8fccc53-d4f6956909c79ed2569ca208cb91c549-ld.mp4	" title="	小学	一年级	语文	三十六计	35.连环计	">	35.连环计	</li>
+<li value="	http://vv.taozhi.cn/600a18b776694b3baf81b078bd68a4cb/36f0dfd7a9244bac9abd50fdd30581f1-4a95f9558143fc0621313de4ed269f43-ld.mp4	" title="	小学	一年级	语文	三十六计	36.走为上计	">	36.走为上计	</li>
+<li value="	http://v.taozhi.cn/4e7ac35a59ae473f9878893325df1be5/674e86c824e642fdaf0c99e59cb58e04-48b4d02d041368defca7788c37c4566f-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 自我介绍_琴琴老师	">	教材全解 一年级语文上 自我介绍_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/bd3ad15b2c68481a88d849dba619fd35/31f70ba3c2cb4f9e8b7b514ead202c41-b63e76e567561dea1f08cf0672909b25-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 课程介绍_琴琴老师	">	教材全解 一年级语文上 课程介绍_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/c4d94b54d67b4ff09cbd5958fda9b6ca/e98254b2b6014570848da3860d1b442f-1f148698e1a4aea9c39703272ed007ea-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 我上学了-我是中国人_琴琴老师	">	教材全解 一年级语文上 我上学了-我是中国人_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/dedd33e2cb324641b2032fb289fef21e/00e9b70732334fbb8a723a3425e910b6-9b196bc17a81fc43174c1d72c8b7f125-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 我上学了-我是小学生_琴琴老师	">	教材全解 一年级语文上 我上学了-我是小学生_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/0bfcbe1a909940aea6eb668678965853/f1232cc991434481901dcb9570670f27-dad0fe554c998c2bbf7da0222ff7f6ba-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 我上学了-我爱学语文_琴琴老师	">	教材全解 一年级语文上 我上学了-我爱学语文_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/95fa9480c1854f3187c40b6f6f2d553d/dfb45775f50f4387ae8fa63f8c600612-e2d8cb4d4bee1f49daa993bb481ebca0-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第1单元 第1课 天地人_琴琴老师	">	教材全解 一年级语文上 第1单元 第1课 天地人_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/b8a3a85687c440f2b6a0efe093f20aef/1a90306600cc4e089dc4d31bc997f47f-4c5c38a8bbf83b78a8995b72203e1549-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第1单元 第2课 金木水火土_琴琴老师	">	教材全解 一年级语文上 第1单元 第2课 金木水火土_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/600612d6e02e417bb22288a524b4abbc/3c946efa02224a30986a33bc658b1eee-32525720093e650665bc414d6c74b309-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第1单元 第3课 口耳目_琴琴老师	">	教材全解 一年级语文上 第1单元 第3课 口耳目_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/38f7312d661a4338b5463415fc31a552/72a693f2f88e4c969411c2a95ee1cb75-1517d8beccbb664e5656c2bc090855f4-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第1单元 第4课 日月水火_琴琴老师	">	教材全解 一年级语文上 第1单元 第4课 日月水火_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/74f3c8927e164697add01b7555aa8bde/66cec86f2d2b4e43bb0ce4ad93981a88-be392528de44d1d0980afd0cc4c102bd-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第1单元 第5课 对韵歌_琴琴老师	">	教材全解 一年级语文上 第1单元 第5课 对韵歌_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/25c8b3fb111746b091e88739c68586e0/8a0aa2b361ed41ab958ef3dea7dd2d54-6fd4934ef10441a1b3ea55fee36d1c51-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第1单元 语文园地一_琴琴老师	">	教材全解 一年级语文上 第1单元 语文园地一_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/733665efea75450d8cae9de031bf6a9a/481d2b2426914f5a8ec91f05dfc9fe54-337c5208afbf5a4ffea13cb6c2dc1a03-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第2单元 第1课 a o e_琴琴老师	">	教材全解 一年级语文上 第2单元 第1课 a o e_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/f203bdf8e129432fad3ab48dcea8e5ab/fc788274e79746b99a543134dfba41c3-f49345c2fe44b35d6d2077473002da9c-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第2单元 第2课 i u ü y w_琴琴老师	">	教材全解 一年级语文上 第2单元 第2课 i u ü y w_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/5510883c13f1463480a250895bc8cf4e/8945f78823b245339cfdf56c1da46d6a-fd689c30ceb7671b7bbcd94836a9c798-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第2单元 第3课 b p m f_琴琴老师	">	教材全解 一年级语文上 第2单元 第3课 b p m f_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/9a4aa706025845049add99c114cfbb94/df36d06b8a0143f0a2c0c69ba36d26b9-24defe4d5856fe493130d36fbaa13ad1-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第2单元 第4课 d t n l_琴琴老师	">	教材全解 一年级语文上 第2单元 第4课 d t n l_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/105bf3d6781e4a06ba0e585899ec9d18/8aa7b7b7c4d04a55b123168427e435e2-05d0bd650366cd0637dde6f522f22ff9-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第2单元 第5课 g k h_琴琴老师	">	教材全解 一年级语文上 第2单元 第5课 g k h_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/c10f8569f8674aef81ff0e828cf9f2cf/7ee9ce1d090f4f11957b1ce59f5b1469-c87e2e90f82485872c621e038a6d8b62-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第2单元 第6课 j q x_琴琴老师	">	教材全解 一年级语文上 第2单元 第6课 j q x_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/491d06db866b45a2bcd5e4956b0466d6/158565ca56db41fca72b2687c5a65908-3d5b0486f2b577ad66cdce3a00d6a604-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第2单元 第7课 z c s_琴琴老师	">	教材全解 一年级语文上 第2单元 第7课 z c s_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/5711de796e114fb785e60eee63380108/462d34b1190d45e4b103df1cc6735a16-23d28c5123bd5f1a9763d72a4b13385b-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第2单元 第8课 zh ch sh r_琴琴老师	">	教材全解 一年级语文上 第2单元 第8课 zh ch sh r_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/02764831ccc247b08f49f9b5efc022ac/4766d662991543ada26b4440bccdddae-c8f0a4aec0cbe9d31f1eed9e56eed99e-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第2单元 语文园地二_琴琴老师	">	教材全解 一年级语文上 第2单元 语文园地二_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/f30253325ee44c41a5f01af832e3ebcb/3524c9789ff742abb42f0622ee3beb3a-b03ab17e1bdcfdb72e09341d6bd943b3-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第3单元 第1课 ai ei ui_琴琴老师	">	教材全解 一年级语文上 第3单元 第1课 ai ei ui_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/8a429a8bbad743bebd68434f0175aec4/7ee5a567f2f04b9ebf9f6c575c7f2a82-af3c36c8474fb67fdabb6431f2d95000-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第3单元 第2课 ao ou iu_琴琴老师	">	教材全解 一年级语文上 第3单元 第2课 ao ou iu_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/2cd28333d1e5426399539fa3940cfaef/eea55b4920f640af850c6f00029fcae1-a7c202a8ebfbcc2ec962c1e0cef002d2-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第3单元 第3课 ie üe er_琴琴老师	">	教材全解 一年级语文上 第3单元 第3课 ie üe er_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/8c6220b94c184cfd899897eca5045353/6b851ca61b9b4fbaafbae70e21cb2dc9-584def5e1ba3001562597d21fe753f98-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第3单元 第4课 an en in un ün_琴琴老师	">	教材全解 一年级语文上 第3单元 第4课 an en in un ün_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/40ee986c54e24a318f27dc0720a6ae95/be0904619ce249dca33e019f23139a6f-43c19d87d069c04e6789d1c5d2dce1db-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第3单元 第5课 ang eng ing ong_琴琴老师	">	教材全解 一年级语文上 第3单元 第5课 ang eng ing ong_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/fcca94a0dab5447e8ade4b18f66d079d/f0e1e1be39e545c98a57bb95adb6fec7-37510127315e9fae5d655a1abb804ffa-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第3单元 语文园地三_琴琴老师	">	教材全解 一年级语文上 第3单元 语文园地三_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/c08218c4351249c7819d712f230c9e3b/19f91c0fe7d1474d95062e8ec2da1ab0-c58d7c91b76fcfcb0ab62d53fb58aaac-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第4单元 第1课 秋天_琴琴老师	">	教材全解 一年级语文上 第4单元 第1课 秋天_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/756319b2391d48e4a7dda6e3561af5d2/1685380a9e4e49cf9f7d6513973f7837-12ccd8171acbeff328cdc5c2051818ae-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第4单元 第2课 小小的船_琴琴老师	">	教材全解 一年级语文上 第4单元 第2课 小小的船_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/a0f37de25f2f49298e83b9fe883f6036/9b0e66586c4445e3bfebacb916806f34-3847e20f50e8bc3d3ad3c795902f7351-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第4单元 第3课 江南_琴琴老师	">	教材全解 一年级语文上 第4单元 第3课 江南_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/41f5808fb5ed40abaa54154c601fa251/1b974b9e3c4a493a9e43a56f33bd09a4-3d23340a4c6297682a4bb6bfcd324ee3-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第4单元 第4课 四季_琴琴老师	">	教材全解 一年级语文上 第4单元 第4课 四季_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/e0042b5c331a4f488f0e7ab63f2a97c0/0f072206b50b4873be17bca9cfa6a9de-93cbaeb7194d7fd2cab9ebffde6ec551-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第4单元 语文园地四_琴琴老师	">	教材全解 一年级语文上 第4单元 语文园地四_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/9df72bd6765742c0a8453f8609784ad9/fbb737947f3f4bfea71e604b3eecddf3-3e61e47894554df5cf50f152f0c81818-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第5单元 第1课 画_琴琴老师	">	教材全解 一年级语文上 第5单元 第1课 画_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/d3162ec009694c26b51316f0f858d8d4/d80a5414f80f4428b0530366ec3cb221-ca2e16abf6649e1e59a7fd1dca042854-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第5单元 第2课 大小多少_琴琴老师	">	教材全解 一年级语文上 第5单元 第2课 大小多少_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/584ce4a90eb0421ba39207691b5be6ce/318e59e93a3b45689360b393761d0a03-10191be286ef36dd8c6e9b4c8d31a79d-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第5单元 第3课 小书包_琴琴老师	">	教材全解 一年级语文上 第5单元 第3课 小书包_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/0496a0d017864cbeb8109b58ba6bc9a1/7106f06072ed4574959fe0e47d74e580-b5a3c0184be560dce537bd5a4a60569a-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第5单元 第4课 日月明_琴琴老师	">	教材全解 一年级语文上 第5单元 第4课 日月明_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/e74abee73bc14716a97cdde1cc93d7c1/d42b0e50fc43412f8ce467271a1cbed5-573e4fdf289c967f2b87b08546a3ac09-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第5单元 第5课 升国旗_琴琴老师	">	教材全解 一年级语文上 第5单元 第5课 升国旗_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/ea20f4712a5347d28165d96c3b88956f/1c351d18bbff44af940323c3c549aa19-0638d517afb9dfb9019227e05af27643-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第5单元 语文园地五_琴琴老师	">	教材全解 一年级语文上 第5单元 语文园地五_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/79dffb8bc21e4ef0a8ae0150c9afc9f4/60ba6e6e1a264bc7a29c74d814d32745-dab1b6f3b5710d0198e59339306692db-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第6单元 第1课 影子_琴琴老师	">	教材全解 一年级语文上 第6单元 第1课 影子_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/30bcd89832dc4918aef88c27fed70f40/110f6d83cbe848d584c9fdc66fe42d58-803491af06b8b8990bbc9179d05c43cb-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第6单元 第2课 比尾巴_琴琴老师	">	教材全解 一年级语文上 第6单元 第2课 比尾巴_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/f82c3e69f1b2446384353b229b03098d/183b786d7b834b44ad1711ee566ee833-46958a4724f436f271e1a18599f5090a-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第6单元 第3课 青蛙写诗_琴琴老师	">	教材全解 一年级语文上 第6单元 第3课 青蛙写诗_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/17323efae5ba443fa4b53894a1086596/d8a0658e06654d1d9a9126fe4620231a-1fd063429d9a3e07be91e7a42199269c-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第6单元 第4课 雨点儿_琴琴老师	">	教材全解 一年级语文上 第6单元 第4课 雨点儿_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/3323c0730ee24f3b8c4ed0ab4ebfefe3/5c74cea1706c4804a50b95f5733852e4-c6458c92dd22af798e01137007da4c84-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第6单元 语文园地六_琴琴老师	">	教材全解 一年级语文上 第6单元 语文园地六_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/074a063c86394420a03faa9e61ecb264/104de9ddc5f9410e949ca4826c9dec1a-fd7ed18d6785569c14be22a3d9ba390e-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第7单元 第1课 明天要远足 第1节_琴琴老师	">	教材全解 一年级语文上 第7单元 第1课 明天要远足 第1节_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/4923431f25f64e4a980767cd5cc6ceb1/5830b88aa4954e7186700dfa0b293342-0ece39b0d8a797484b3e239272043d75-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第7单元 第1课 明天要远足 第2节_琴琴老师	">	教材全解 一年级语文上 第7单元 第1课 明天要远足 第2节_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/80664a0a58554a00a623566b1f09ec47/3b2c3b0023564e228f5dc1977b809b06-0694bb527d0eb0a73bd1f374ffbceaba-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第7单元 第2课 大还是小_琴琴老师	">	教材全解 一年级语文上 第7单元 第2课 大还是小_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/741f5dcb60ad4feca568076709455189/90a72f4e441a47caa2ffb81f616decfd-0064118c80e830ef13c879a856dfc4a5-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第7单元 第3课 项链_琴琴老师	">	教材全解 一年级语文上 第7单元 第3课 项链_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/9ad78095acd748c288c929c27b2d9f3f/006d15676e4e4cb382ccccc86f087bf2-4d4517beba4a59b9ef22e6c06dade786-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第7单元 语文园地七_琴琴老师	">	教材全解 一年级语文上 第7单元 语文园地七_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/4a136b91cac94ef996dcd441ba82627b/274e3d6a570e4a5e84e1e75c22faf8e4-6e4fad21c4807e78a6f233b0ded39843-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第8单元 第1课 雪地里的小画家_琴琴老师	">	教材全解 一年级语文上 第8单元 第1课 雪地里的小画家_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/dcac0b69abd04a8bab7c70585a9932d7/5cec9de601874848b68d267083531a8d-8e56a5640ed45990acd65339b13a82c5-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第8单元 第2课 乌鸦喝水_琴琴老师	">	教材全解 一年级语文上 第8单元 第2课 乌鸦喝水_琴琴老师	</li>
+<li value="	http://v.taozhi.cn/b8dec279769d4098a9b701a8c1b22db3/4b62c59a47eb46bf957e20cf70dd31cc-5bdfef3a07de16dd0725cd3fea21f317-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第8单元 第3课 小蜗牛_琴琴老师 	">	教材全解 一年级语文上 第8单元 第3课 小蜗牛_琴琴老师 	</li>
+<li value="	http://v.taozhi.cn/d828243a4e1a4777b6d85096bb165a72/76483b41784646af9abde69097517c61-8fcdbd21be2898ecda1115cf902ffe67-ld.mp4	" title="	小学	一年级	语文	《小学教材全解》伴你学语文一年级（上册）	教材全解 一年级语文上 第8单元 语文园地八_琴琴老师	">	教材全解 一年级语文上 第8单元 语文园地八_琴琴老师	</li>
+<li value="	http://vv.taozhi.cn/b27c38db6d3641b790758b87628688c2/31fa99ac9ff54add8cdd5ba4d392a54b-25beada29fc258ab6100018a7feddf53-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	《给孩子的故宫奇妙游记》宣传片 	">	《给孩子的故宫奇妙游记》宣传片 	</li>
+<li value="	http://vv.taozhi.cn/bdf054ae1a204a75b973ec81f24ea25d/fd005e1d04984e97a84204d27942588c-87b94317ec0a56cc89aa6325ee389541-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	1.到午门听听紫禁城的故事	">	1.到午门听听紫禁城的故事	</li>
+<li value="	http://vv.taozhi.cn/8606f134651846e1aee1b496a8bba0fc/1dcddb6235654f98ab2eb6be1e94f4d5-0b9d649a04eaaacda0ce4b1e0b061586-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	2.到宫殿角落解锁“吉祥如意兽”	">	2.到宫殿角落解锁“吉祥如意兽”	</li>
+<li value="	http://vv.taozhi.cn/3842e469c35142b1ad3b9ed6cbd23b0d/179cc98223e348eab4be2715280830c5-01a4dfbaa119bded955ceed6a6b13eaa-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	3.到太和殿参观典礼与顶级建筑	">	3.到太和殿参观典礼与顶级建筑	</li>
+<li value="	http://vv.taozhi.cn/62b411c761b54b938d75e11fa3431184/e8735aeb62d74a6fabb46bac1453db8e-b8a0e7510b3b86d8d9c7261c5383590f-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	4.到保和殿内感受古代顶级考试	">	4.到保和殿内感受古代顶级考试	</li>
+<li value="	http://vv.taozhi.cn/210ed8de56ac4c93b480d941d5769791/a8eb88b002174ee4b1fb2112ae7ace68-9d506e8d09a41e721d5bbcedd267d641-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	5.到保和殿外感受“千龙吐水”	">	5.到保和殿外感受“千龙吐水”	</li>
+<li value="	http://vv.taozhi.cn/0fad6f1b62144ff78757048b35146504/66971ac55dd14ff9a04a1b1dd09b968c-2bb9bef9c4ce607c27ebc1845177840f-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	6.到乾清宫探寻选皇帝的秘密	">	6.到乾清宫探寻选皇帝的秘密	</li>
+<li value="	http://vv.taozhi.cn/691876e5ca7f446da85efc9586ff7382/f0c84e86fd054518b1a4445be755d353-94c5ecf5411763346d3f7b379a28552f-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	7.到交泰殿找找皇帝的宝藏	">	7.到交泰殿找找皇帝的宝藏	</li>
+<li value="	http://vv.taozhi.cn/130ebc3b948d49559af7d3a81775c866/916edb8befe24ed5ac80307c8a2972d1-9d9a9d4e5e1e694efeed8ec602be5eab-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	8.到故宫里的学校感受皇家课堂	">	8.到故宫里的学校感受皇家课堂	</li>
+<li value="	http://vv.taozhi.cn/3487e255dc2c428bba129e6e83e58d95/0bd08e7c0a58471585ac746fd66e52e8-1f7d66b41e25cf7da501f4055cfc97c9-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	9.到畅音阁和漱芳斋听“故宫好声音”	">	9.到畅音阁和漱芳斋听“故宫好声音”	</li>
+<li value="	http://vv.taozhi.cn/5c9d497ffbeb477f9612a71cc794954e/b1aeb1120def4f8e9cd0a3d0a7471477-774f50a9a462ba8d27100b790825ba9e-ld.mp4	" title="	小学	一年级	语文	故宫奇妙游记	10.到御花园和御膳房感受皇家娱乐	">	10.到御花园和御膳房感受皇家娱乐	</li>
+<li value="	http://v.taozhi.cn/64535f6cd78e4a40b562b0175d71e22e/2eaaff88cef74fd2b9db08d51564d8d2-3e4de7f341e564ee15b863241f75d94b-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	写一段内容完整的话	">	写一段内容完整的话	</li>
+<li value="	http://v.taozhi.cn/45e3e1e1193640629aca239eb00e7ee0/2a15a88bcdfa45cbacca3ff565b8890d-ff7118ffcc0c73d94998e6984ac8ed63-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	写一句生动的话	">	写一句生动的话	</li>
+<li value="	http://v.taozhi.cn/f04409ef5b9447a6b848267432a9a637/adb23b69dab4403cb01dfa55af3bcbc9-c1ec3152f7bbb8ab0e3915f6268e22dc-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	妙用修辞来写话	">	妙用修辞来写话	</li>
+<li value="	http://v.taozhi.cn/b97b3782487247a78433556bc7dcff5e/00d00f7eabf9425eb992f116227503df-c999eb9ccc09451eb923aa21d12598c4-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	活用句式来写话	">	活用句式来写话	</li>
+<li value="	http://v.taozhi.cn/81f40220d46b42f49d7ac19b19f25774/ae762e8aa74b4bfeb3b526b13e059465-3ffcebd8bd31b6364c6139c7727fdb91-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	按照顺序来写话	">	按照顺序来写话	</li>
+<li value="	http://v.taozhi.cn/3e600a90b22e48e29ad930f9a602ba44/07c2011e914f4516b9a1d528a7893515-fb3fb3e4fe6849053c0257cb108383bc-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	调用五官来写话	">	调用五官来写话	</li>
+<li value="	http://v.taozhi.cn/9446ff8e2e7c460e9231d5afaa42b282/77ab132c2dff4924b9bef05f758cf6e5-53a7aa996eec7748197ec65b4f50ea39-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	写一句有趣的话	">	写一句有趣的话	</li>
+<li value="	http://v.taozhi.cn/0eed768e84f7494bb774dd6011cd354d/6d79f24f0d3d47b18a9b4a8b7d845f4a-db1ada9ad95a873476868aae464d6bea-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	写一句具体的话	">	写一句具体的话	</li>
+<li value="	http://v.taozhi.cn/cfe60e2296d6446ea9a5d64a295e5022/822a44d1018443eb8cf19c1676ffaef5-e7fd4bc275ce8a0518f0ff001ea4e530-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	写一句完整的话	">	写一句完整的话	</li>
+<li value="	http://v.taozhi.cn/a85ea2042720438d8c2a61d41f350510/8eb15242b7a646378d974389a8e007e8-884cbcc116b703b70e8492745fa64032-sd.m3u8	" title="	小学	一年级	语文	看动漫学写话（统编版一二年级通用）	写几句连贯的话	">	写几句连贯的话	</li>
+<li value="	http://v.taozhi.cn/f579a5219587466796270b209667f2e7/78ee068eb4034b5c9da80ea6a5f4edb7-b1e6f5baed1edaf3060882366bcc50ca-sd.m3u8	" title="	小学	一年级	语文	看动漫学古诗（统编版一年级下）	《静夜思》（床前明月光）	">	《静夜思》（床前明月光）	</li>
+<li value="	http://v.taozhi.cn/654dec0e4d7f4652a787bd06a02b2fab/a57562ffbd32475dadf59184a6c9f5a1-83d623570b7a6be85aad2704e649f9b5-sd.m3u8	" title="	小学	一年级	语文	看动漫学古诗（统编版一年级下）	《池上》（小娃撑小艇）	">	《池上》（小娃撑小艇）	</li>
+<li value="	http://v.taozhi.cn/ba707e32adc34bfca812b9db159d21ff/3f8e392719ca4ca8993639c26725464b-50b3e017f02e7d0a010205ed6efbc0f5-sd.m3u8	" title="	小学	一年级	语文	看动漫学古诗（统编版一年级下）	《小池》（泉眼无声惜细流）	">	《小池》（泉眼无声惜细流）	</li>
+<li value="	http://v.taozhi.cn/7c3a368b77d749c99b2ab1c7a2662fbb/4be1ce9e57244986a439d2c83eef311b-0ced9538568c2357b1f657b99f8e26cc-sd.m3u8	" title="	小学	一年级	语文	看动漫学古诗（统编版一年级下）	《春晓》（春眠不觉晓）	">	《春晓》（春眠不觉晓）	</li>
+<li value="	http://v.taozhi.cn/d73026d754194d1eac03b646c36fd979/9ff188995a7945d684e9c5873f999b6f-cd486353821cc0eaf1dd54228bd3728b-sd.m3u8	" title="	小学	一年级	语文	看动漫学古诗（统编版一年级下）	《赠汪伦》（李白乘舟将欲行）	">	《赠汪伦》（李白乘舟将欲行）	</li>
+<li value="	http://v.taozhi.cn/1ab5fac5c4fe4c9f896a0b6cbd41fa44/cd187d69fb3c49c599ef133d98b166be-3bc74650ca875c103fba467fd0328727-sd.m3u8	" title="	小学	一年级	语文	看动漫学古诗（统编版一年级下）	《寻隐者不遇》（松下问童子）	">	《寻隐者不遇》（松下问童子）	</li>
+<li value="	http://v.taozhi.cn/1eb4321f40ee4491a7d0f0756d4d9454/f6a37c417c6b4daab111e421f3b771ac-18d1d91518ac753c913633fa9a0e0631-sd.m3u8	" title="	小学	一年级	语文	看动漫学古诗（统编版一年级下）	《画鸡》（头上红冠不用裁）	">	《画鸡》（头上红冠不用裁）	</li>
+<li value="	http://vv.taozhi.cn/ea26afd0fd08411dbba2c4d81af9d5fe/b73514a297e14236afcda0280c96ed95-3f82d97a93cec51b9b5ffbd27ff335aa-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-宣传片	">	萌趣中国节-宣传片	</li>
+<li value="	http://vv.taozhi.cn/6c763a87ae624b62812dc7ab138d05ae/a6f30ef225fc4a46b60956ccbb012414-a124a5e6d4445a0e81359faaececbe33-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-第一集冬至	">	萌趣中国节-第一集冬至	</li>
+<li value="	http://vv.taozhi.cn/f5fa4f1724ba4dc6953141b91e7d6a8c/794425e60e834f15a30cd6e6b3c34446-459a5c66821142255cb315c7d3bab6ab-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-第二集腊八	">	萌趣中国节-第二集腊八	</li>
+<li value="	http://vv.taozhi.cn/8cad971f246d490f9a98e41b65389917/8cfc19d7336441afa307a6710b3a5964-f3bac8d95742a47df865f0685c9c9883-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-第三集祭灶节	">	萌趣中国节-第三集祭灶节	</li>
+<li value="	http://vv.taozhi.cn/09a215562ed442d0b71825843a77d19f/87987ace563149999a8d87cb4f44e88a-256880c38b85d64fce92918dd126bcf9-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-第四集除夕	">	萌趣中国节-第四集除夕	</li>
+<li value="	http://vv.taozhi.cn/214ac895d609424f81d135e7beaff71b/6adbf5712fde4b85964d181aef1f32b5-4ffc2b780f7a7421fdc405e0ffe9085b-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-第五集春节	">	萌趣中国节-第五集春节	</li>
+<li value="	http://vv.taozhi.cn/8930812897ab4628b24b4452603f4199/241f8d15fc684036b4b5d4ef36599342-8237d3af5d0b9e4b20f398149ea598ca-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-第六集元宵节	">	萌趣中国节-第六集元宵节	</li>
+<li value="	http://vv.taozhi.cn/8216ea1a2c1f42c284131198fc6a2b28/ec5ff496fa8d4d9cb75d25131a4c5594-a76deec032db4872200a2cef9ec9dd0e-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-第七集龙抬头	">	萌趣中国节-第七集龙抬头	</li>
+<li value="	http://vv.taozhi.cn/0b66ebd3c63348ed93bfceba6fd9ac97/5d75e27e8fdb452db441b0fe63da2ed1-cdb870fcb518c58b443eaf48f5231393-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-第八集上巳节	">	萌趣中国节-第八集上巳节	</li>
+<li value="	http://vv.taozhi.cn/9da91cc917cc4179a52de8979782e006/61b31b7c506e4d2c8c3443ac518b8ec7-a82fd3d06cfe57e54f0b8330eb3bc2b7-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节-第九集寒食节	">	萌趣中国节-第九集寒食节	</li>
+<li value="	http://vv.taozhi.cn/0873774b5ad84f468c49ebd8a8f7aa77/7a858132f19f41cea8fe1ee70984491d-667260b6fc16dbf0573c73a13dd99e6d-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节——第十集清明节	">	萌趣中国节——第十集清明节	</li>
+<li value="	http://vv.taozhi.cn/276c021f627c477689bb9f7afbca975d/5e6433b73b2d40388e4ef990c2646e35-b943bcaf171a995163ba82432f479fc1-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节——第十一集端午节	">	萌趣中国节——第十一集端午节	</li>
+<li value="	http://vv.taozhi.cn/49d80e68b13e4966990a80573e151018/3a7634362a8f4e43ba6fab8fbb743192-9058bc364b64c0b219ec0570bc36587a-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节——第十二集七夕节	">	萌趣中国节——第十二集七夕节	</li>
+<li value="	http://vv.taozhi.cn/45011f7b570b43b8bfba7a1a9d98387b/372c3df5ae8f4ca9b219beda3aa22c26-e76be85e7a152f4c1105ab81f69c1489-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节——第十三集中元节	">	萌趣中国节——第十三集中元节	</li>
+<li value="	http://vv.taozhi.cn/5f4373f362364197aac14aeb67e63506/d2637726cd13451b83cdac4417488582-e867af27e7067a5e5fed84e029b70866-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节—第十四集中秋节	">	萌趣中国节—第十四集中秋节	</li>
+<li value="	http://vv.taozhi.cn/4dbe35404f734d2d85dfa549c6906f08/08c66fb5808949ceb53c3341db10e1d2-c9366634a010adc449fed9e2f49cfb69-ld.mp4	" title="	小学	一年级	语文	萌趣中国节	萌趣中国节——第十五集重阳节	">	萌趣中国节——第十五集重阳节	</li>
+<li value="	http://vv.taozhi.cn/54d4cb23781547e893b4ef101e74f382/56be40ce1a8842bd963c084f2c27c2a0-3608465aa27f87e81e6bd3093261c2df-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	中国历史宣传片	">	中国历史宣传片	</li>
+<li value="	http://vv.taozhi.cn/9f80f16c7bec4f94bb2f1d6f272990eb/39ec366b23814c42bb5943b0863567bb-c66a6f71c4a6501d83baeda15220ff67-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	01 上古时代的故事	">	01 上古时代的故事	</li>
+<li value="	http://vv.taozhi.cn/ee3cc7795b9d4027b6da731d16725b29/bcc0c4c7e66044ba90d37044f488c488-da3735975299463e1eb54b8411284da4-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	02 夏朝的家天下	">	02 夏朝的家天下	</li>
+<li value="	http://vv.taozhi.cn/53e94ee34ed643ecb962ead2cd5b08cf/96199fa28c3c4795b9135aeff6d257b5-a9eb8e400ebb86cca247fbded1854315-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	03 商王朝的故事	">	03 商王朝的故事	</li>
+<li value="	http://vv.taozhi.cn/3fb2600b9ce644acac05e5aaab521665/e0fc040c512a455597aa48be353cb878-ba7487b2957fc4cc6cc8667a47ed3f0c-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	04 西周的故事	">	04 西周的故事	</li>
+<li value="	http://vv.taozhi.cn/166776419c6447e18676ccb36de372bb/28b9fdf3bae6445e92d241ab6f0fb958-7408c8035f015ee20950c5e308e82cdd-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	05 西周的制度	">	05 西周的制度	</li>
+<li value="	http://vv.taozhi.cn/a6d3188fef324627b08a51610828a225/df59c089136c408cae3647a32df49b93-84d4dfde516ae67c3714f3c5731c7f59-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	06 周幽王烽火戏诸侯	">	06 周幽王烽火戏诸侯	</li>
+<li value="	http://vv.taozhi.cn/6e5022235eb84a0db131e5bc9245ec3e/7a8d92e200f04d02b1ff20f94c3d06c6-794edb804b14eca1f4d2c33464b79cb2-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	07 春秋争霸（上）	">	07 春秋争霸（上）	</li>
+<li value="	http://vv.taozhi.cn/9624b99b5e1a48949ca15eba1c20d651/128ebb5f9a4b4f898ef173227cd6e271-717c5612af835a05a10ed6eb1591f41f-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	08 春秋争霸（下）	">	08 春秋争霸（下）	</li>
+<li value="	http://vv.taozhi.cn/561e6616a36e4246b4713d37f85b7290/667b532372ce497383c2d666c3ebf965-542f0cf26ce4ba989a73718458bc9645-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	09 孔子的故事	">	09 孔子的故事	</li>
+<li value="	http://vv.taozhi.cn/a9b67a635cae406d9e9b2a4025c3ab9c/f606818312874da79d856deda096ed94-7b5ae7d09c7c254d82b31340d5451056-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	10 战国大变法	">	10 战国大变法	</li>
+<li value="	http://vv.taozhi.cn/af73f9e118d04b9da85d1df2ba22a873/1cc5212018c7487ca8bc7b67b1016bf5-f9c8592d06ffd8da852bb526d55143eb-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	11 大忽悠的时代	">	11 大忽悠的时代	</li>
+<li value="	http://vv.taozhi.cn/318ad52e3bee4e16bf57eb8f206109b9/6317bade0a304cbe8a9d391326cc86c3-d65bd27559ae42c40e6cb91fbf79b9fd-ld.mp4	" title="	小学	一年级	语文	少年中国史（第一季）	12 秦始皇统一中国	">	12 秦始皇统一中国	</li>
+<li value="	http://vv.taozhi.cn/9cc4bc7af22a4d919c0c39a5061f97ca/9ddd223fd4fe44a39ffaa68f20f1ba4c-e3492a19ae9a80566e982a979f9f0c21-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	唐诗大动画宣传片	">	唐诗大动画宣传片	</li>
+<li value="	http://vv.taozhi.cn/b00a1bd74d6c473a87031407c9f5665d/2c1e9baf1b8a469e89e0924102be2190-ebc8d2d9a0160f1ae9e5ef4a3f81efdf-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	01 悲惨神童骆宾王	">	01 悲惨神童骆宾王	</li>
+<li value="	http://vv.taozhi.cn/608a8f4ed19f42eb9c50bb7457bdca2f/c68df120ec5f405e8f6a562c5aecf966-d8d6f11b18601287c13c521ac779fe08-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	02 王勃：虽然走得早，但是很刺激	">	02 王勃：虽然走得早，但是很刺激	</li>
+<li value="	http://vv.taozhi.cn/55a72cf9c674498396c28b2a9c05f0d1/0acd4cd7700745258461850050da32d5-1485682a8606257cd0ed6bb750e32a1e-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	03 错过无数好运气的孟浩然	">	03 错过无数好运气的孟浩然	</li>
+<li value="	http://vv.taozhi.cn/3bc071b7dbe54ca38f5b1fd7bfa6dc75/46314fb75d284d88a90b299f1cc67829-aba807e10a4d318c6689a6f1fb88d540-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	04 将佛系进行到底的王维	">	04 将佛系进行到底的王维	</li>
+<li value="	http://vv.taozhi.cn/fd12601a975047119dc6b70b7aadbb2b/638d615b8d4f4ab59f80c10b5dcd760e-f4e49b7c845906864edfc3a53b7dd382-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	05 边塞诗派的扛把子王昌龄	">	05 边塞诗派的扛把子王昌龄	</li>
+<li value="	http://vv.taozhi.cn/1bb33a1b51da42a3b648b5dc6a0a1761/b9a7b4c3354d4a86bf631ce3cf76283f-2aa3ecedf31f3355f87b3281d796b4e7-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	06 诗人中的囚犯孟郊	">	06 诗人中的囚犯孟郊	</li>
+<li value="	http://vv.taozhi.cn/6e39c400da30443ab01a1933218330a3/296db8eea1964b3893975c9e83a02984-ad03e889559f852a813b1ba9b96aa3d7-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	07 敢讲真话的韩愈	">	07 敢讲真话的韩愈	</li>
+<li value="	http://vv.taozhi.cn/798156bd8c5b4f1cbac72e31e0a5607d/6222acebe516402a8c8f907a0ff5858c-0ebcfe421c34bc347271806d51f2ae6b-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	08 为人民写诗的白居易	">	08 为人民写诗的白居易	</li>
+<li value="	http://vv.taozhi.cn/56309996fce64934828ef2c23580d887/8b17fbbca50e449594cc5695b65a7a60-e2033edd36c151d5cf777664601db016-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	09 打遍天下无敌手的刘禹锡	">	09 打遍天下无敌手的刘禹锡	</li>
+<li value="	http://vv.taozhi.cn/5bb221075b8b4e148aae5b5f4f54574a/d37201c5771a4e7da0a3cc335895b8a2-bf330a4b44fd14cf286f44d1937773ef-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	10 游玩一生的才子杜牧	">	10 游玩一生的才子杜牧	</li>
+<li value="	http://vv.taozhi.cn/c915e3e67b09453bb391fddec6538578/727c59e3adfa4269a8bc58c923c7aeb2-27f9f21a8deb52e88a1bfaa44794a335-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	李白小传宣传片	">	李白小传宣传片	</li>
+<li value="	http://vv.taozhi.cn/3b47e49792884329ae5aa12c60c5028e/82091b8a164046878c453f2dd60907db-9014f436f42da733cbe77528094c6e4e-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	01 天上掉下个小诗仙	">	01 天上掉下个小诗仙	</li>
+<li value="	http://vv.taozhi.cn/37bd0972a4b847d3afcc47552236df59/936242cd8d474edcb80e3fd190ad90a0-c4e656d07e0e0b8b3639322283f0e5be-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	02 中二少年养成记	">	02 中二少年养成记	</li>
+<li value="	http://vv.taozhi.cn/e50f5c7243cd4890bfdde31d12e93982/da1deb24540646f5b7b6f66e8fc9c62a-c4a8304d341069b13c69cf5016d50d85-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	03 李白的职场生涯	">	03 李白的职场生涯	</li>
+<li value="	http://vv.taozhi.cn/faca23a56804430398d0fb2ef03cab79/a4d1bb5331da4cdb9711208a9fbf646e-151f5ab2cfbc6cb87171c40b8e1c82a0-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	04 李白的后半生	">	04 李白的后半生	</li>
+<li value="	http://vv.taozhi.cn/84fb828c618a4afa98e21eb2c1d662b9/5e00eb0255544c93bd026270e14ed712-778cb3409123330e99d77c25f0c943e6-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	05 李白身后那些事	">	05 李白身后那些事	</li>
+<li value="	http://vv.taozhi.cn/b34d73cd8d974d58b7a7aae943fa91d5/b544d1f5ec2041f38743f25061220221-f551e268b4edbaf73765235014d63795-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	06 李白的朋友圈	">	06 李白的朋友圈	</li>
+<li value="	http://vv.taozhi.cn/8f1f20cb6ae24eeaad5d1587fddd9e53/8f3a1b8327ed468c8a3f748a31bc6bce-d65a4e7c10e306baea0724c8de4ebc13-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	07 李白的背包客生活	">	07 李白的背包客生活	</li>
+<li value="	http://vv.taozhi.cn/8fd0dc00aa0940ed95dcc9a3c49f32c8/50dd6de6a0f4494a8f6ea99e57f26c3f-029ff6a59ae49c4819e90fc80198719f-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	08 酒中仙李白	">	08 酒中仙李白	</li>
+<li value="	http://vv.taozhi.cn/1413138b5d8643adbd448468380093ae/8b71fe9141ae441785dc84e9ded2edce-374e1e299b68f8879cd66488ce64420e-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	09 李白的内心世界	">	09 李白的内心世界	</li>
+<li value="	http://vv.taozhi.cn/bd83d3e67eab4265bbb9dca1bdea3c02/6ab6e933f58e4f3a81c9d90aa3065191-00d4db3884dfab0c267f0d7dd59934fe-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	10 李白的小总结	">	10 李白的小总结	</li>
+<li value="	http://vv.taozhi.cn/168a45f6893b45e1a9a41e71aa36cab6/db1b04790c9343ef8916fb610f9402ba-d04a20a5a0131f046f1b2089ff97c1e9-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	杜甫小传宣传片	">	杜甫小传宣传片	</li>
+<li value="	http://vv.taozhi.cn/88ef63fff47e4717b0bbdb3db8afe5f5/3ef10f351f304fc2b78c297581ca2386-5c0dac55e890f7b63e00e1c815b2e2ac-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	01 有个诗人叫杜甫	">	01 有个诗人叫杜甫	</li>
+<li value="	http://vv.taozhi.cn/1ceb67f550aa466298b492b337bff392/734e467b442e45e087e33a6f23206544-eb86e027444222e215300db6627f74cc-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	02 杜甫的快乐时光	">	02 杜甫的快乐时光	</li>
+<li value="	http://vv.taozhi.cn/4fc09126e2b54f20a675d629a894fac1/f57375c332ab4a84aaf2061b94a62fec-d7d3f4ed0751a484efac439644a2df03-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	03 杜甫求职记	">	03 杜甫求职记	</li>
+<li value="	http://vv.taozhi.cn/e2a908ecf18648c9ba462bb47365d7fb/b1b2a1337b254bca8d1971694843a827-01fc0391cca8e54caf3ee676f65ce139-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	04 战乱中的杜甫	">	04 战乱中的杜甫	</li>
+<li value="	http://vv.taozhi.cn/3a12620da00a470881c8376b3ec1e994/6e671866e0dc46a98fc3a41d40209e00-054d5c614cad0b4576d1b6130cf3ca3b-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	05 杜甫最后的日子	">	05 杜甫最后的日子	</li>
+<li value="	http://vv.taozhi.cn/157f1573440c4090aad953518b86405d/51af70169f5f454789da8972b2cca24a-b5378168373b053eadad136991ed51c7-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	06 杜甫的成名记	">	06 杜甫的成名记	</li>
+<li value="	http://vv.taozhi.cn/49961eb1d6424c2c9d9ebfe43402ecb5/2cfa70c1247446abb84ccf173be1de37-1a477f5e268d75a75a168270dcfe7750-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	07 杜甫的朋友圈	">	07 杜甫的朋友圈	</li>
+<li value="	http://vv.taozhi.cn/714169bc9ea64e709372136e0abb187e/9535fc4b64984116b32f7007909c1b44-98bf4c65ac6217c28911a42adcb86db1-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	08 杜甫的茅草堂	">	08 杜甫的茅草堂	</li>
+<li value="	http://vv.taozhi.cn/6988b56b7ecf4f9d900198a444f073a1/eb11506c0b2a4a2e814c10bad7358626-c74966ae8dd15c8815e80f54be0db370-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	09 杜甫的登高望远	">	09 杜甫的登高望远	</li>
+<li value="	http://vv.taozhi.cn/d742a2a35fe44ec99c10c867d812d85a/c58f519b2b37469280c7f614acf23725-cc37d4ddd477666f8cf644702ad23e07-ld.mp4	" title="	小学	一年级	语文	唐诗大动画	10 盘点杜甫的诗	">	10 盘点杜甫的诗	</li>
+<li value="	http://vv.taozhi.cn/cd943cd86f6e46a1868587ba27b535c0/a4c764ff0edc4fc1b3daf2940a28a7d6-e0c5676635559dcb4d829d6993f1d099-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	识字1 春夏秋冬	">	识字1 春夏秋冬	</li>
+<li value="	http://vv.taozhi.cn/485a890ec0514eb6a789d92b94c37d56/53fe54e1f9df4af8bc6b2fbd6b0d1966-578837e012e0908f2b7306a837be815d-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	识字2 姓氏歌	">	识字2 姓氏歌	</li>
+<li value="	http://vv.taozhi.cn/e8ad0e8610c84395b9e130f9d512f7cd/30b0f8450dd14bf7adccaffaeae4e70f-69643912a585412064d6aebf763d00de-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	识字3 小青蛙	">	识字3 小青蛙	</li>
+<li value="	http://vv.taozhi.cn/eb714a8d25a04b6fa067565d2561e45f/185193bc667b45d8bf95f869b04a4919-873e6d5e9d281ec06eace9914e39419b-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	识字4 猜字谜	">	识字4 猜字谜	</li>
+<li value="	http://vv.taozhi.cn/7ee5ad05abc044f68abe8586aba8d99f/1dc583c9801b4b86b25d29c534f8ed63-3a6a51e11a7cc14020c0f694270956da-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	1 吃水不忘挖井人	">	1 吃水不忘挖井人	</li>
+<li value="	http://vv.taozhi.cn/a4d2498608534b3387b6314e46db07fe/843c7ac48dbc460d859151149936c320-f4e7892addd6b92fd76d95a66f1ff6e8-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	2 我多想去看看	">	2 我多想去看看	</li>
+<li value="	http://vv.taozhi.cn/a38ca08d03834314b09e3dcf3a0bb6a9/792e946963a949bea8fcf620ee64c42f-0b4bff9a8fec7162b82391bb5d950eb5-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	3 一个接一个	">	3 一个接一个	</li>
+<li value="	http://vv.taozhi.cn/b42d85964f9642a6b0ec8916c9fd1890/2e144450d59c44418b6564bcc46666d0-1ce4e297ed6b58fb613a71f913449279-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	4 四个太阳	">	4 四个太阳	</li>
+<li value="	http://vv.taozhi.cn/f70aa3b34b50460aa87a7608733f66b8/a76313def8fc4f1d904c562b9145df27-2e7e0fa8e871caf284ae9396f30e0992-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	5 小公鸡和小鸭子	">	5 小公鸡和小鸭子	</li>
+<li value="	http://vv.taozhi.cn/10148332f94f42f4b12df9380d220f98/8ec466609a4140d785769eadeac613c0-e0cf9b8043d0825e07da1cb18530087e-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	6 树和喜鹊	">	6 树和喜鹊	</li>
+<li value="	http://vv.taozhi.cn/6c8e3f08666c4658b4254ee3770aea1b/75b8dcaaaae84f7abeb34398f73bf912-eadceb8315e3aa620d50e29f0e6096c1-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	7 怎么都快乐	">	7 怎么都快乐	</li>
+<li value="	http://vv.taozhi.cn/f8f9342dab1244109d4302e0327f49f5/f10903331a464ff194a7b7962dbd484c-944365142e911bc58dadb2c660ef1c9a-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	8 静夜思	">	8 静夜思	</li>
+<li value="	http://vv.taozhi.cn/6d623e43b43c47be875d40a625f76c24/b89e8b367b824532949dddc8ed17472f-33cf826d93b0a55ca1d5c20995785334-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	9 夜 色	">	9 夜 色	</li>
+<li value="	http://vv.taozhi.cn/27d163180cab46fd80e6ca7a81a096a5/0a31dfd5d7dd47a8a917b81841ee3787-5f0ea02b3647a7291f0b4612eb221956-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	10 端午粽	">	10 端午粽	</li>
+<li value="	http://vv.taozhi.cn/dba905bb0a22490195500566750252fa/d6aae8a15e334c9183a7c3e6addcd1f6-d97f7c9bf851cea3b965c3f989948690-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	11 彩 虹	">	11 彩 虹	</li>
+<li value="	http://vv.taozhi.cn/abb66d9490a24c2282959cc593737ea2/d185fa1864e74dba8d5e06fd407abb92-59dd76a09d199aab1972256178941f68-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	识字5 动物儿歌	">	识字5 动物儿歌	</li>
+<li value="	http://vv.taozhi.cn/bf447e67afc64285b83438bfba74b80d/0d4039881aa74ccabfd24a231c302486-ba41fc5be5ab0a099b57ab6fd37e9251-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	识字6 古对今	">	识字6 古对今	</li>
+<li value="	http://vv.taozhi.cn/59ac9584c1c642b6bd836e9a5db3040e/77df3826ecf8468f9b0fbd1c65afa753-4acd0770c002f752490ee3f849e24006-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	识字7 操场上	">	识字7 操场上	</li>
+<li value="	http://vv.taozhi.cn/d06bb46e4391481eb84952e24832b247/1ed2de1c46c7412b9b8acb7e28a711b2-364c2d3e71960c10f64ddd688595fc32-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	识字8 人之初	">	识字8 人之初	</li>
+<li value="	http://vv.taozhi.cn/0e04a003b2244923b7325a3e40c3011b/741f8224b4184471a4cf23b8a27fef8b-93b5ff8eabebd7e2d9058ec264d48f08-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	12 古诗二首	">	12 古诗二首	</li>
+<li value="	http://vv.taozhi.cn/52b09df194134404a0a7a9315f906597/2a6cfb713d8f443688e90e3e4531da54-2fa606528b6972638bb475f18be4d593-ld.mp4	" title="	小学	一年级	语文	2020春（下册）统编版语文预习直播课一年级回放	13 荷叶圆圆	">	13 荷叶圆圆	</li>
+
 
 				</ul>
+				<script>
+					var v = document.getElementById("video");<!--定义事件-->
+					function clickV() {   <!--解释播放暂停的方法-->
+						if(v.paused){
+							v.play();
+						}else {
+							v.pause();
+						}
+
+					}
+					function clickbig() {  <!--解释放大的方法-->
+						v.width = 800;
+						v.hight = 800;
+					}
+					function clicksmall() {  <!--解释缩小的方法-->
+						v.width = 300;
+						v.hight = 300;
+					}
+					function clicknext() {
+						v.play();
+					}
+				</script>
+
 				<!--<button title="展开播放列表" id="playList-show"> > </button>-->
 				<button title="收起播放列表" id="playList-hidden"> < </button>
 			</aside>
-			<button title="展开播放列表" id="正在播放-show1"> > </button>
+			<button title="展开播放列表" id="playList-show1"> > </button>
 			
 		</div>
 	</body>

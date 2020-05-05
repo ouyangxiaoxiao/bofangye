@@ -23,7 +23,7 @@
 					if(lis[j] == this){
 						video.setAttribute("src",this.getAttribute("value"));
 						video.setAttribute('autoplay','autoplay');
-						this.innerHTML = lis[j].innerHTML+'正在播放';
+						this.innerHTML = 'palying '+this.innerHTML;
 						this.className = "select";
 						curr = j+1;
 					}else{
@@ -61,13 +61,13 @@
 	}
 
 	video.setAttribute('src',url[0]);
-	lis[0].innerHTML = lis[j].innerHTML+'正在播放';
+	lis[0].innerHTML = 'palying '+lis[0].innerHTML;
 	lis[0].className = "select";
 	
 	
 	
 	video.addEventListener('ended', play);
-	play();
+	//play();
 	function play() {
 	   video.src = url[curr];
 	   video.load(); // 如果短的话，可以加载完成之后再播放，监听 canplaythrough 事件即可
@@ -77,7 +77,7 @@
 			if(j == curr){
 				video.setAttribute("src",lis[j].getAttribute("value"));
 				video.setAttribute('autoplay','autoplay');
-				lis[j].innerHTML = lis[j].innerHTML+'正在播放';
+				lis[j].innerHTML = 'palying '+lis[j].innerHTML;
 				lis[j].className = "select";
 			}else{
 				lis[j].innerHTML = lis[j].getAttribute("title");
@@ -87,5 +87,4 @@
 	   curr++;
 	   if (curr >= vLen) curr = 0; // 播放完了，重新播放
 	}
-	
 }
